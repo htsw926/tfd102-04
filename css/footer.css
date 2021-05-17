@@ -1,0 +1,91 @@
+footer.footer{
+  /* border: 1px solid white; */
+  width: 100%;
+  height: 330px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  background-color: #2F2E29;
+}
+
+div.footer_left{
+  /* border: 1px solid white; */
+  width:300px;
+  height: 300px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+p.tag{
+  border-bottom: 3px solid #A7B47F;
+  font-family: "Amiri";
+  text-align: center;
+  margin-top: 50px;
+  color: #A7B47F;
+  font-size: 18px;
+}
+div.footer_left ul.content_list li{
+  /* border: 1px solid white; */
+  margin-top: 10px;
+  color: #A7B47F;
+  font-size: 16px;
+  text-align: center;
+}
+div.footer_center{
+  /* border: 1px solid red; */
+  width:300px;
+  height: 300px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+div.icon{
+  /* border: 1px solid green; */
+  height: 60px;
+  width: 150px;
+  margin: 0 auto;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+div.FB{
+  background-image: url("../images/index/012_facebook.svg");
+  width: 35px;
+  height: 35px;
+  margin-top: 10px;
+}
+div.IG{
+  background-image: url("../images/index/012_instagram.svg");
+  width: 35px;
+  height: 35px;
+  margin-top: 10px;
+}
+div.TWITTER{
+  background-image: url("../images/index/012_twitter.svg");
+  width: 35px;
+  height: 35px;
+  margin-top: 10px;
+}
+div.footer_right{
+  /* border: 1px solid green; */
+  width:300px;
+  height: 300px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+p.con{
+  font-family: "Amiri";
+  text-align: center;
+  color: #A7B47F;
+  font-size: 16px;
+  margin-top: 10px;
+}
+div.copyright{
+  /* border: 1px solid green; */
+  height: 150px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: #A7B47F;
+  font-size: 12px;
+  padding-top: 50px;
+  background-color: #2F2E29;
+}

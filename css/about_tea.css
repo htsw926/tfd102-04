@@ -1,0 +1,113 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Source Han Serif";
+}
+
+body{
+  background-color: #D5D8B9;
+}
+
+div.banner{
+  /* border: 1px solid red; */
+  width:100%;
+  min-width: 1200px;
+  height: 720px;
+  background-image: url("../images/about_tea/001_header.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+div.page_title{
+  border-bottom: 3px solid #2F2E29;
+  text-align: center;
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  transform: translateX(-50%); 
+  width: 250px;
+  color: #2F2E29;
+}
+
+div.content{
+  /* border: 1px solid black; */
+  width: 1200px;
+  height: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+div.kind{
+  /* border: 1px solid red; */
+  width: 450px;
+  height: 230px;
+  position: absolute;
+  left: 20%;
+  top: 5%;
+  background-image: url("../images/about_tea/002_kind.jpg");
+  background-size: cover;
+  background-position-x: -85px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+div.kind_bg{
+  /* border: 1px solid red; */
+  width: 280px;
+  height: 100px;
+  position: absolute;
+  right: -50%;
+  top: 50%;
+  background-color: #E39D7B;
+  opacity: .6;
+}
+div.knowledge{
+  /* border: 1px solid red; */
+  width: 450px;
+  height: 230px;
+  position: absolute;
+  left: 20%;
+  top: 35%;
+  background-image: url("../images/about_tea/003_knowledge.jpg");
+  background-size: cover;
+  background-position-x: -85px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+div.knowledge_bg{
+  /* border: 1px solid red; */
+  width: 280px;
+  height: 100px;
+  position: absolute;
+  right: -50%;
+  top: 50%;
+  background-color: #E39D7B;
+  opacity: .6;
+}
+div.produce{
+  /* border: 1px solid red; */
+  width: 450px;
+  height: 230px;
+  position: absolute;
+  left: 20%;
+  top: 65%;
+  background-image: url("../images/about_tea/004_produce.jpg");
+  background-size: cover;
+  background-position-x: -85px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+div.produce_bg{
+  /* border: 1px solid red; */
+  width: 280px;
+  height: 100px;
+  position: absolute;
+  right: -50%;
+  top: 50%;
+  background-color: #E39D7B;
+  opacity: .6;
+}
+div.content h2{
+  position: absolute;
+  top: 65%;
+  right: -30%;
+  color: #2F2E29;
+}

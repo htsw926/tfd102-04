@@ -1,0 +1,90 @@
+div.right_sidebar{
+  position: fixed;
+  
+  top: 50%;
+  right: 0;
+  transform: translate(100%, -50%);
+  min-height: 100%;
+  width: 500px;
+  background-color: #E39D7B;
+  color: #2F2E29;
+  padding: 10px 20px 10px 10px;
+  border-radius: 10px 0 0 10px;
+  z-index: 100;
+
+  /* 過場效果 */
+  transition: transform 1s ease-in-out;
+}
+div.right_sidebar.-open{
+  transform: translate(0%, -50%);
+}
+
+
+/* 展開的按鈕 */
+div.right_sidebar button.btn_drawer{
+  background: none;
+  background-color: #E39D7B;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-100%, -50%);
+  color: #2F2E29;
+  border: none;
+  font-size: 1rem; /* 16px */
+  width: 1.8em;    /* 相對於這個元素的文字大小 */
+  padding: 4px 0;
+  line-height: 1.6;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 5px 0 0 5px;
+  text-align: center;
+  outline: none;
+}
+
+div.right_shopcar{
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 10px;
+}
+div.right_shopcar img{
+  /* border: 1px solid white; */
+  width: 30%;
+}
+div.right_shopcar h3.sp_title:hover{
+  color: #F6E1B4;
+}
+h3.sp_title {
+  /* border: 1px solid red; */
+  width: 70%;
+  height: 50px;
+  line-height: 50px;
+  color: #2F2E29;
+  position: absolute;
+  right: 0%;
+  top: 10px;
+} 
+h3.sp_num{
+  position: absolute;
+  top: 32%;
+  right: 50.5%;
+  font-family: "Amiri";
+  color: #2F2E29;
+}
+h3.sp_num2{
+  position: absolute;
+  top: 50%;
+  right: 50.5%;
+  font-family: "Amiri";
+  color: #2F2E29;
+}
+button.btn_spcar{
+  height: 35px;
+  background-color: #D5D8B9;
+  border: none;
+}
+button.btn_spcar:hover{
+  background-color: #F6E1B4;
+  cursor: pointer;
+}

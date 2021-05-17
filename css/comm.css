@@ -1,0 +1,92 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Source Han Serif";
+}
+
+body{
+  background-color: #2F2E29;
+}
+
+div.banner{
+  /* border: 1px solid red; */
+  width:100%;
+  min-width: 1200px;
+  height: 720px;
+  background-image: url("../images/comm/001_header.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+div.page_title{
+  border-bottom: 3px solid #E39D7B;
+  text-align: center;
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  transform: translateX(-50%); 
+  width: 250px;
+  color: #E39D7B;
+}
+
+div.comm_pic{
+  width: 650px;
+  height: 400px;
+  margin: 0 auto;
+  background-image: url("../images/comm/002.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+div.comm_info{
+  /* border: 1px solid red; */
+  height: 600px;
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+div.info_left, div.info_center, div.info_right{
+  /* border: 1px solid white; */
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+div.txt_r{
+  /* border: 1px solid red; */
+  width: 25px;
+  color: #D5D8B9;
+  margin-left: 5px;
+}
+div.txt_r1 p{
+  /* border: 1px solid red; */
+  width: 20px;
+  height: 100%;
+  color: #D5D8B9;
+  font-family: "Amiri";
+  margin-left: 5px;
+}
+div.txt_c{
+  /* border: 1px solid blue; */
+  width: 25px;
+  color: #D5D8B9;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+div.txt_c p{
+  padding-left: 10px;
+}
+div.txt_c img{
+  /* border: 1px solid red; */
+  width: 35px;
+  margin-top: 10px;
+}
+a {
+  text-decoration: none;
+  color: #D5D8B9;
+}
