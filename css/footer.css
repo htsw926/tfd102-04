@@ -47,19 +47,21 @@ div.icon{
   justify-content: space-between;
 }
 div.FB{
-  background-image: url("../images/index/012_facebook.svg");
+  background-image: url("../images/index/012_facebook.png");
   width: 35px;
   height: 35px;
   margin-top: 10px;
+  background-position: center;
+  background-size: 100%;
 }
 div.IG{
-  background-image: url("../images/index/012_instagram.svg");
+  background-image: url("../images/index/012_instagram.png");
   width: 35px;
   height: 35px;
   margin-top: 10px;
 }
 div.TWITTER{
-  background-image: url("../images/index/012_twitter.svg");
+  background-image: url("../images/index/012_twitter.png");
   width: 35px;
   height: 35px;
   margin-top: 10px;
@@ -88,4 +90,12 @@ div.copyright{
   font-size: 12px;
   padding-top: 50px;
   background-color: #2F2E29;
+}
+
+a{
+  text-decoration: none;
+  color: #A7B47F;
+}
+div.footer_left ul.content_list li:hover{
+  color: #E39D7B;
 }
