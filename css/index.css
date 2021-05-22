@@ -60,8 +60,7 @@ div.news div.news_title{
 }
 div.news div.news_bg{
   /* border: 1px solid red; */
-  background-color: white;
-  opacity: .5;
+  background-color: hsla(74, 26%, 60%, 0.75);
   width: 450px;
   height: 200px;
   position: absolute;
@@ -153,8 +152,7 @@ div.about div.about_txt{
 }
 div.about div.about_bg{
   /* border: 1px solid red; */
-  background-color: white;
-  opacity: .5;
+  background-color: hsla(74, 26%, 60%, 0.75);
   width: 450px;
   height: 280px;
   position: absolute;
@@ -395,8 +393,8 @@ div.card_txt{
   left: 50%;
   transform: translateX(-50%); 
   /* backdrop-filter: blur(5px); */
-  background-color: white;
-  opacity: .6;
+  background-color: #D5D8B9;
+  opacity: .8;
   z-index: 1;
 }
 div.knowledge  p.para{

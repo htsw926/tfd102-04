@@ -10,6 +10,11 @@ body{
   background-color: #2F2E29;
 }
 
+div.comm_info a {
+  text-decoration: none;
+  color: #D5D8B9;
+}
+
 div.banner{
   /* border: 1px solid red; */
   width:100%;
@@ -50,49 +55,55 @@ div.comm_pic{
 div.comm_info{
   /* border: 1px solid red; */
   height: 600px;
-  width: 100%;
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  position: relative;
 }
 
-div.info_left, div.info_center, div.info_right{
-  /* border: 1px solid white; */
-  width: 250px;
-  display: flex;
-  justify-content: center;
-  flex-direction: row-reverse;
-}
-div.txt_r{
-  /* border: 1px solid red; */
-  width: 25px;
-  color: #D5D8B9;
-  margin-left: 5px;
-}
-div.txt_r1 p{
-  /* border: 1px solid red; */
-  width: 20px;
-  height: 100%;
-  color: #D5D8B9;
+p.eng{
   font-family: "Amiri";
-  margin-left: 5px;
 }
-div.txt_c{
-  /* border: 1px solid blue; */
-  width: 25px;
-  color: #D5D8B9;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-div.txt_c p{
-  padding-left: 10px;
-}
-div.txt_c img{
+
+div.info_us{
   /* border: 1px solid red; */
-  width: 35px;
-  margin-top: 10px;
+  padding: 60px;
 }
-a {
-  text-decoration: none;
+div.info_outer{
+  /* border: 1px solid blue; */
+  padding-left: 60px;
+  width: 250px;
+}
+div.info_outer div.txt_c{
+  /* border: 1px solid blue; */
+  padding-bottom: 10px;
+  position: relative;
+}
+div.info_outer div.txt_c div.logo_txt{
+  /* border: 1px solid red; */
+  display: inline-block;
+  position: absolute;
+  left: 28%;
+  top:  10%;
+}
+div.info_us div.txt_r h4{
+  color: #F6E1B4;
+}
+div.info_us div.txt_r p{
   color: #D5D8B9;
+}
+div.as_pic div.as1{
+  position: absolute;
+  right: 0;
+  top: 10%;
+}
+div.as_pic div.as2{
+  position: absolute;
+  right: 10%;
+  top: 40%;
+}
+div.as_pic div.as3{
+  position: absolute;
+  bottom: 0;
+  right: 15%;
 }
