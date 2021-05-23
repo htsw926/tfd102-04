@@ -10,7 +10,7 @@ div.right_sidebar{
   color: #2F2E29;
   padding: 10px 20px 10px 10px;
   border-radius: 10px 0 0 10px;
-  z-index: 100;
+  z-index: 2000;
 
   /* 過場效果 */
   transition: transform 1s ease-in-out;

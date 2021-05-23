@@ -6,10 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
   <title>《 茗享 》</title>
   <link href="./css/header.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/hamburgers.css">
   <link href="./css/index.css" rel="stylesheet">
   <link href="./css/footer.css" rel="stylesheet">
   <link href="./css/font.css" rel="stylesheet">
   <link href="./css/right_sp.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/gotop.css">
+  <link rel="stylesheet" href="./vendors/aos/css/aos.css">
+  <link rel="stylesheet" href="./vendors/hamburger/hamburgers.css">
 </head>
 
 <body>
@@ -17,41 +21,41 @@
   <header class="header">
     <div class="banner">
       <a href="./index.html">
-        <div class="logo">
+        <div class="logo" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
           <h1>煮好茗／享好茶</h1>
         </div>
       </a>
       <ul>
         <a href="./comm.html">
-          <li>
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1400">
             <h3>論茶</h3>
             <div class="line"></div>
             <h3>聯絡我們</h3>
           </li>
         </a>
         <a href="./products.html">
-          <li>
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1200">
             <h3>找茶</h3>
             <div class="line"></div>
             <h3>茶商品</h3>
           </li>
         </a>
         <a href="./about_tea.html">
-          <li>
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
             <h3>說茶</h3>
             <div class="line"></div>
             <h3>關於茶</h3>
           </li>
         </a>
         <a href="./about_us.html">
-          <li>
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
             <h3>言茶</h3>
             <div class="line"></div>
             <h3>品牌故事</h3>
           </li>
         </a>
         <a href="./news.html">
-          <li>
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="600">
             <h3>新茶</h3>
             <div class="line"></div>
             <h3>最新消息</h3>
@@ -61,13 +65,73 @@
     </div>
   </header>
 
+
+  <div class="hbg" data-aos="fade-up" data-aos-offset="1200">
+    <a href="javascript:click_popup();" id="popup_a" class="popup_open">
+      <button class="hamburger hamburger--spring" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </a>
+  </div>
+
+
+  <div id="popup1" class="overlay">
+    <div class="popup">
+      <a href="./index.html">
+        <div class="logo" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+          <h1>煮好茗／享好茶</h1>
+        </div>
+      </a>
+      <ul>
+        <a href="./comm.html">
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1400">
+            <h3>論茶</h3>
+            <div class="line"></div>
+            <h3>聯絡我們</h3>
+          </li>
+        </a>
+        <a href="./products.html">
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1200">
+            <h3>找茶</h3>
+            <div class="line"></div>
+            <h3>茶商品</h3>
+          </li>
+        </a>
+        <a href="./about_tea.html">
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+            <h3>說茶</h3>
+            <div class="line"></div>
+            <h3>關於茶</h3>
+          </li>
+        </a>
+        <a href="./about_us.html">
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
+            <h3>言茶</h3>
+            <div class="line"></div>
+            <h3>品牌故事</h3>
+          </li>
+        </a>
+        <a href="./news.html">
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="600">
+            <h3>新茶</h3>
+            <div class="line"></div>
+            <h3>最新消息</h3>
+          </li>
+        </a>
+      </ul>
+    </div>
+  </div>
+
+
   <div class="content_top">
     <div class="news">
-      <div class="news_pic"></div>
-      <div class="news_title">
+      <div class="news_pic" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000"></div>
+      <div class="news_title" data-aos="fade-left" data-aos-duration="2000">
         <h3> 新　茶</h3>
       </div>
-      <div class="news_txt">
+      <div class="news_txt" data-aos="fade-up" data-aos-duration="3000">
         <ul>
           <li>
             <p>2021-05-xx　熱門茶款推薦</p>
@@ -86,30 +150,31 @@
           </li>
         </ul>
       </div>
-      <div class="news_bg"></div>
+      <div class="news_bg" data-aos="fade-up" data-aos-duration="2000"></div>
       <a href="./news.html">
-        <div class="news_btn">
+        <div class="news_btn" data-aos="fade-top" data-aos-easing="linear" data-aos-duration="1500">
           <h4>最　新　消　息</h4>
         </div>
       </a>
       <div class="leaf_bg1"></div>
     </div>
 
+
     <div class="about">
-      <div class="about_pic"></div>
-      <div class="about_title">
+      <div class="about_pic" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000"></div>
+      <div class="about_title" data-aos="fade-right" data-aos-duration="2000">
         <h3> 言　茶</h3>
       </div>
-      <div class="about_txt">
+      <div class="about_txt" data-aos="fade-up" data-aos-duration="3000">
         <p>茶樹從植入泥土那一刻開始</p><br>
         <p>要經歷「種茶、製茶、泡茶」的漫長旅程</p><br>
         <p>這個過程中會出現無數環節</p><br>
         <p>每一個環節都要完美組合</p><br>
         <p>最終才能成就一杯好茶</p>
       </div>
-      <div class="about_bg"></div>
+      <div class="about_bg" data-aos="fade-up" data-aos-duration="2000"></div>
       <a href="./about_us.html">
-        <div class="about_btn">
+        <div class="about_btn" data-aos="fade-top" data-aos-easing="linear" data-aos-duration="1500">
           <h4>品　牌　故　事</h4>
         </div>
       </a>
@@ -118,6 +183,11 @@
 
     <div class="hover_img">
       <div class="hover_bg"></div>
+
+      <!-- <div class="hover_btn">
+        11111
+      </div> -->
+
       <div class="hover_slogan_title">
         <h6>全世界最好的茶就是台灣茶</h6>
       </div>
@@ -153,7 +223,7 @@
       </div>
     </div>
 
-    <div class="knowledge">
+    <div class="knowledge" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
       <a href="./knowledge.html">
         <div class="card_left">
           <p class="para">茶會過期嗎？正　<br>確的保存方式讓...<br>
@@ -180,9 +250,10 @@
         </div>
       </a>
     </div>
-    <div class="bottom_bg">
-      <div class="bottom_leaf"></div>
-    </div>
+
+  </div>
+  <div class="bottom_bg">
+    <div class="bottom_leaf" data-aos="zoom-in"></div>
   </div>
 
   <div class="right_sidebar">
@@ -203,6 +274,9 @@
     </div>
   </div>
 
+
+  <button type="button" class="go_top">
+  </button>
 
 
   <footer class="footer">
@@ -248,6 +322,8 @@
 
 
 
+  <script src="./vendors/aos/js/aos.js"></script>
+  <script>AOS.init();</script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script>
     // DOM 載入完成之後
@@ -259,9 +335,25 @@
         $(this).closest("div.right_sidebar").toggleClass("-open");
       });
 
-    });
-  </script>
+      // hamburger icon 的切換
+      $("button.hamburger").on("click", function () {
+        $(this).toggleClass("is-active");
+      });
 
+    });
+
+    function click_popup() {
+      if ($('#popup_a').hasClass('popup_open')) {
+        $('.overlay').css('opacity', 1);
+        $('.overlay').css('visibility', 'visible');
+      } else {
+        $('.overlay').css('opacity', 0);
+        $('.overlay').css('visibility', 'hidden');
+      }
+
+      $('#popup_a').toggleClass("popup_open");
+    }
+  </script>
 </body>
 
 </html>

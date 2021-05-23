@@ -9,23 +9,24 @@
 body{
   background-color: #2F2E29;
 }
+img{
+  max-width: 100%;
+}
 
 div.banner{
   /* border: 1px solid red; */
   width:100%;
-  min-width: 1200px;
+  /* min-width: 1200px; */
   height: 880px;
   background-image: url("../images/index/001_header.png");
   background-size: 100%;
+  /* background-size: contain; */
   position: relative;
+  background-repeat: no-repeat;
 }
-/* div.content_top{
-  border: 1px solid white;
-  margin: 0 auto;
-  width: 1200px;
-  height: 800px;
-  position: relative;
-} */
+
+
+
 div.news{
   /* border: 1px solid white; */
   margin: 0 auto;
@@ -70,8 +71,6 @@ div.news div.news_bg{
 }
 div.news div.news_txt{
   /* border: 1px solid red; */
-  /* background-color: white; */
-  /* opacity: .5; */
   width: 450px;
   height: 200px;
   position: absolute;
@@ -83,8 +82,6 @@ div.news div.news_txt ul li{
   /* border: 1px solid red; */
   margin-left: 15%;
   margin-top: 13px;
-  color: #2F2E29;
-  /* font-size: 16px; */
   z-index: 1;
 }
 div.news div.news_btn{
@@ -225,6 +222,16 @@ div.hover_img div.hover_slogan_title{
   z-index: 1;
 }
 
+/* div.hover_btn{
+  border: 1px solid red;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  right: 0;
+} */
+
+
 div.hover_slogan_bg{
   /* border: 1px solid red; */
   background-color: #2F2E29;
@@ -247,12 +254,14 @@ div.content_shop{
 div.content_shop div.content_shop_bg{
   /* border: 1px solid white; */
   width: 100%;
-  height: 600px;
+  height: 800px;
   background-image: url("../images/index/006_productbg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   opacity: .5;
+  background-attachment: fixed;
+  
 }
 div.content_shop div.shop_slogan1{
   /* border: 1px solid white; */
@@ -421,6 +430,8 @@ div.bottom_bg{
   height: 850px;
   background-image: url("../images/index/010_overbg.png");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   position: relative;
 }
 div.bottom_leaf{
@@ -431,7 +442,8 @@ div.bottom_leaf{
   top: -25%;
   background-image: url("../images/index/009_aosfade.png");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: repeat-x;
   z-index: 0;
 }
 
