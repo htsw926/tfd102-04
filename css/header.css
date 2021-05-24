@@ -1,3 +1,6 @@
+div.banner{
+  position: relative;
+}
 div.banner div.logo{
   /* border: 1px solid red; */
   width: 100px;
@@ -5,20 +8,52 @@ div.banner div.logo{
   background-image: url("../images/logo.svg");
   background-repeat: no-repeat;
   position: absolute;
-  top: 50px;
+  top: 5%;
   left: 12%;
 }
+
+@media screen and (max-width: 575px){
+  div.banner div.logo{
+    width: 50px;
+    height: 90px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+  div.banner div.logo{
+    width: 80px;
+    height: 160px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+  div.banner div.logo{
+    width: 90px;
+    height: 170px;
+  }
+}
+
+
 div.banner div.logo h1{
   /* border: 1px solid red; */
   width: 20px;
   position: absolute;
-  top: 150px;
-  left: 100px;
+  top: 60%;
+  right:-30%;
   font-size: 18px;
   color:#F6E1B4;
 }
+
+@media screen and (max-width: 575px){
+  div.banner div.logo h1{
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+  div.banner div.logo h1{
+    font-size: 16px;
+  }
+}
+
 div.banner ul{
-  /* border: 1px solid red; */
   position: absolute;
   right: 20%;
   top: 15%;
@@ -29,15 +64,41 @@ div.banner ul{
   flex-direction: row;
   justify-content: space-between;
 }
+
+@media screen and (max-width: 575px){
+  div.banner ul{
+    height: 0px;
+    width: 0px;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+  div.banner ul{
+    height: 0px;
+    width: 0px;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+  div.banner ul{
+    height: 300px;
+    width: 240px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+  div.banner ul{
+    height: 340px;
+    width: 280px;
+  }
+}
+
 div.banner ul li{
   background-color: #2F2E29;
   width: 30px;
-  font-size: 20px;
   padding: 5px;
-}
-div.banner ul li{
   color: #D5D8B9;
 }
+
 div.banner ul li:hover{
   cursor: pointer;
   color:#2F2E29;
@@ -51,6 +112,29 @@ div.banner ul li div.line{
   margin: 0 auto;
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+  div.banner ul li{
+    width: 25px;
+  }
+  div.banner ul li h3{
+    font-size: 16px;
+  }
+  div.banner ul li div.line{
+    height: 80px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+  div.banner ul li{
+    width: 28px;
+  }
+  div.banner ul li h3{
+    font-size: 18px;
+  }
+  div.banner ul li div.line{
+    height: 140px;
+  }
 }
 
 a{

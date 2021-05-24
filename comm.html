@@ -9,6 +9,9 @@
   <link href="./css/comm.css" rel="stylesheet">
   <link href="./css/footer.css" rel="stylesheet">
   <link href="./css/font.css" rel="stylesheet">
+  <link rel="stylesheet" href="./vendors/aos/css/aos.css">
+  <link rel="stylesheet" href="./vendors/hamburger/hamburgers.css">
+  <link rel="stylesheet" href="./css/hamburgers.css">
 </head>
 
 <body>
@@ -16,41 +19,41 @@
   <header class="header">
     <div class="banner">
       <a href="./index.html">
-        <div class="logo">
+        <div class="logo" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
           <h1>煮好茗／享好茶</h1>
         </div>
       </a>
       <ul>
         <a href="./comm.html">
-          <li>
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1400">
             <h3>論茶</h3>
             <div class="line"></div>
             <h3>聯絡我們</h3>
           </li>
         </a>
         <a href="./products.html">
-          <li>
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1200">
             <h3>找茶</h3>
             <div class="line"></div>
             <h3>茶商品</h3>
           </li>
         </a>
         <a href="./about_tea.html">
-          <li>
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
             <h3>說茶</h3>
             <div class="line"></div>
             <h3>關於茶</h3>
           </li>
         </a>
         <a href="./about_us.html">
-          <li>
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
             <h3>言茶</h3>
             <div class="line"></div>
             <h3>品牌故事</h3>
           </li>
         </a>
         <a href="./news.html">
-          <li>
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="600">
             <h3>新茶</h3>
             <div class="line"></div>
             <h3>最新消息</h3>
@@ -60,40 +63,102 @@
     </div>
   </header>
 
+  <div id="hamburger" class="hbg" data-aos="fade-up">
+    <a href="javascript:click_popup();" id="popup_a" class="popup_open">
+      <button class="hamburger hamburger--spring" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </a>
+  </div>
+
+  <div id="popup1" class="overlay">
+    <div class="popup">
+      <a href="./index.html">
+        <div class="logo" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+          <h1>煮好茗／享好茶</h1>
+        </div>
+      </a>
+      <ul>
+        <a href="./comm.html">
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1400">
+            <h3>論茶</h3>
+            <div class="line"></div>
+            <h3>聯絡我們</h3>
+          </li>
+        </a>
+        <a href="./products.html">
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1200">
+            <h3>找茶</h3>
+            <div class="line"></div>
+            <h3>茶商品</h3>
+          </li>
+        </a>
+        <a href="./about_tea.html">
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+            <h3>說茶</h3>
+            <div class="line"></div>
+            <h3>關於茶</h3>
+          </li>
+        </a>
+        <a href="./about_us.html">
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
+            <h3>言茶</h3>
+            <div class="line"></div>
+            <h3>品牌故事</h3>
+          </li>
+        </a>
+        <a href="./news.html">
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="600">
+            <h3>新茶</h3>
+            <div class="line"></div>
+            <h3>最新消息</h3>
+          </li>
+        </a>
+      </ul>
+    </div>
+  </div>
+
   <div class="page_title">
     <div class="title_txt">
       <h2>聯絡我們</h2>
     </div>
   </div>
 
-  <div class="comm_pic"></div>
+  <div class="outer_pic">
+    <div class="comm_pic" data-aos="zoom-in-up"></div>
+  </div>
 
   <div class="comm_info">
 
     <div class="info_us">
-      <div class="txt_r">
+      <div class="txt_r" data-aos="zoom-in-up">
         <h4>聯絡資訊</h4><br>
       </div>
-      <div class="txt_r">
+      <div class="txt_r" data-aos="zoom-in-up">
         <p></p>
       </div>
-      <div class="txt_r">
+      <div class="txt_r" data-aos="zoom-in-up">
         <p>茗享</p>
       </div>
-      <div class="txt_r">
+      <div class="txt_r" data-aos="zoom-in-up">
         <p class="eng">+886-0-0000-0000</p>
       </div>
-      <div class="txt_r">
+      <div class="txt_r" data-aos="zoom-in-up">
         <p>臺北市某某區某某路某某巷某某號</p>
       </div>
       <div class="as_pic">
-        <div class="as1"><img src="./images/comm/as1.png"></div>
-        <div class="as2"><img src="./images/comm/as2.png"></div>
-        <div class="as3"><img src="./images/comm/as3.png"></div>
+        <div class="as1" data-aos="zoom-in-up" data-aos-easing="linear" data-aos-duration="1500"><img
+            src="./images/comm/as1.png"></div>
+        <div class="as2" data-aos="zoom-in-up" data-aos-easing="linear" data-aos-duration="1500"><img
+            src="./images/comm/as2.png"></div>
+        <div class="as3" data-aos="zoom-in-up" data-aos-easing="linear" data-aos-duration="1000"><img
+            src="./images/comm/as3.png"></div>
       </div>
     </div>
 
-    <div class="info_outer">
+    <div class="info_outer" data-aos="zoom-in-up">
       <div class="txt_c">
         <a href=""><img src="./images/index/012_twitter.png">
           <div class="logo_txt">
@@ -159,6 +224,50 @@
     本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之用。<br>參考資源:XXXXXXXXXXXXX。<br>若有侵權疑慮，您可以私訊<a
       href="https://www.facebook.com/webindex/">[TibaMe-前端設計工程師養成班]</a>，後續會由專人協助處理
   </div>
+
+  <script src="./vendors/aos/js/aos.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+
+    // DOM 載入完成之後
+    $(function () {
+      // 點擊
+      $("button.btn_drawer").on("click", function () {
+        // -open 的樣式切換
+        $(this).closest("div.right_sidebar").toggleClass("-open");
+      });
+
+      // hamburger icon 的切換
+      $("button.hamburger").on("click", function () {
+        $(this).toggleClass("is-active");
+      });
+
+      const hamburger = document.querySelector('#hamburger');
+
+      if (window.innerWidth < 575) {
+        hamburger.dataset.aosOffset = 0;
+        // $('#hamburger').data('aos-offset', 0);
+      } else {
+        hamburger.dataset.aosOffset = 1000;
+        // $('#hamburger').data('aos-offset', 1200);
+      }
+
+      AOS.init();
+
+    });
+
+    function click_popup() {
+      if ($('#popup_a').hasClass('popup_open')) {
+        $('.overlay').css('opacity', 1);
+        $('.overlay').css('visibility', 'visible');
+      } else {
+        $('.overlay').css('opacity', 0);
+        $('.overlay').css('visibility', 'hidden');
+      }
+
+      $('#popup_a').toggleClass("popup_open");
+    }
+  </script>
 
 </body>
 
