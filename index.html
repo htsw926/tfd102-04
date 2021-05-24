@@ -223,7 +223,8 @@
       </div>
     </div>
 
-    <div class="knowledge" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+    <div class="knowledge" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="linear"
+      data-aos-duration="500">
       <a href="./knowledge.html">
         <div class="card_left">
           <p class="para">茶會過期嗎？正　<br>確的保存方式讓...<br>
@@ -275,7 +276,8 @@
   </div>
 
 
-  <button type="button" class="go_top">
+  <button type="button" class="go_top1" id="go_top" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+    <img src="./images/tea-bag1.png">
   </button>
 
 
@@ -340,6 +342,14 @@
         $(this).toggleClass("is-active");
       });
 
+    });
+
+    // 點擊按鈕，頁面滑到最上方
+    $("#go_top").on("click", function (e) {
+      e.preventDefault();
+      $('html, body').animate({
+        scrollTop: 0
+      }, 750);
     });
 
     function click_popup() {
