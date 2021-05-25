@@ -17,7 +17,7 @@ div.banner{
   /* border: 1px solid red; */
   width:100%;
   /* min-width: 1200px; */
-  height: 880px;
+  height: 865px;
   background-image: url("../images/index/001_header.png");
   background-size: 100%;
   /* background-size: contain; */
@@ -25,12 +25,36 @@ div.banner{
   background-repeat: no-repeat;
 }
 
-
+@media screen and (max-width: 575px){
+  div.banner{
+    height: 370px;  
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+  div.banner{
+    height: 510px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+  div.banner{
+    height: 645px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+  div.banner{
+    height: 740px;
+  }
+}
+@media screen and (min-width: 1200px){
+  div.banner{
+    height: 865px;
+  }
+}
 
 div.news{
   /* border: 1px solid white; */
   margin: 0 auto;
-  width: 1200px;
+  max-width: 100%;
   height: 450px;
   position: relative;
 }
@@ -46,6 +70,34 @@ div.news div.news_pic{
   background-position-x: center;
   z-index: 0;
 }
+
+@media screen and (max-width: 575px){
+  div.news{
+    width: 575px;
+  }
+  div.news div.news_pic{
+    width: 100%;
+    height: 100%;
+    left: 0;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+  div.news{
+    width: 600px;
+  }
+  div.news div.news_pic{
+    width: 100%;
+    height: 100%;
+    left: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+  div.news div.news_pic{
+    left: 10%;
+  }
+}
+
+
 div.news div.news_title{
   /* border: 1px solid red; */
   width: 100px;
@@ -59,6 +111,20 @@ div.news div.news_title{
   top: 25%;
   z-index: 3;
 }
+
+@media screen and (max-width: 575px){
+  div.news div.news_title{
+    left: 4%;
+    top:15%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+  div.news div.news_title{
+    left: 16%;
+    top: 15%;
+  }
+}
+
 div.news div.news_bg{
   /* border: 1px solid red; */
   background-color: hsla(74, 26%, 60%, 0.75);
@@ -69,6 +135,20 @@ div.news div.news_bg{
   top: 30%;
   z-index: 1;
 }
+
+@media screen and (max-width: 575px){
+  div.news div.news_bg{
+    right: 3%;
+    top: 30%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+  div.news div.news_bg{
+    right: 3%;
+    top: 30%;
+  }
+}
+
 div.news div.news_txt{
   /* border: 1px solid red; */
   width: 450px;
@@ -84,6 +164,70 @@ div.news div.news_txt ul li{
   margin-top: 13px;
   z-index: 1;
 }
+
+@media screen and (max-width: 575px){
+  div.news div.news_txt{
+    right: 10%;
+    top: 30%;
+  }
+  div.news div.news_txt ul>a{
+    color: black;
+  }
+  div.news div.news_txt ul li{
+    display: inline-block;
+  }
+  div.news div.news_txt ul li p::before{
+    content: "";
+    display: inline-block;
+    background-image: url("../images/index/leaf.svg");
+    background-size: cover;
+    background-position-x: center;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+  div.news div.news_txt{
+    right: 10%;
+    top: 30%;
+  }
+  div.news div.news_txt ul>a{
+    color: black;
+  }
+  div.news div.news_txt ul li{
+    display: inline-block;
+  }
+  div.news div.news_txt ul li p::before{
+    content: "";
+    display: inline-block;
+    background-image: url("../images/index/leaf.svg");
+    background-size: cover;
+    background-position-x: center;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+  div.news div.news_txt ul>a{
+    color: black;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+  div.news div.news_txt ul>a{
+    color: black;
+  }
+}
+@media screen and (min-width: 1200px){
+  div.news div.news_txt ul>a{
+    color: black;
+  }
+}
+
+
 div.news div.news_btn{
   /* border: 1px solid red; */
   width: 150px;
@@ -93,10 +237,22 @@ div.news div.news_btn{
   line-height: 45px;
   /* font-size: 18px; */
   position: absolute;
-  right: 40%;
+  right: 39%;
   top: 78%;
   border-radius: 2px;
 }
+
+@media screen and (max-width: 575px){
+  div.news div.news_btn{
+    display: none;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+  div.news div.news_btn{
+    display: none;
+  }
+}
+
 div.news div.news_btn h4{
   color: #2F2E29;
 }
@@ -104,10 +260,17 @@ div.news div.news_btn:hover{
   background-color: #A7B47F;
   cursor: pointer;
 }
+
+
+
+
+
+
+
 div.about{
   /* border: 1px solid white; */
   margin: 0 auto;
-  width: 1200px;
+  max-width: 100%;
   height: 800px;
   position: relative;
 }

@@ -133,21 +133,31 @@
       </div>
       <div class="news_txt" data-aos="fade-up" data-aos-duration="3000">
         <ul>
-          <li>
-            <p>2021-05-xx　熱門茶款推薦</p>
-          </li>
-          <li>
-            <p>2021-05-xx　喝茶計畫</p>
-          </li>
-          <li>
-            <p>2021-05-xx　茶葉展覽速報</p>
-          </li>
-          <li>
-            <p>2021-05-xx　新商品上架</p>
-          </li>
-          <li>
-            <p>2021-05-xx　概念網站亮相</p>
-          </li>
+          <a href="./news.html">
+            <li>
+              <p>2021-05-xx　熱門茶款推薦</p>
+            </li>
+          </a>
+          <a href="./news.html">
+            <li>
+              <p>2021-05-xx　喝茶計畫</p>
+            </li>
+          </a>
+          <a href="./news.html">
+            <li>
+              <p>2021-05-xx　茶葉展覽速報</p>
+            </li>
+          </a>
+          <a href="./news.html">
+            <li>
+              <p>2021-05-xx　新商品上架</p>
+            </li>
+          </a>
+          <a href="./news.html">
+            <li>
+              <p>2021-05-xx　概念網站亮相</p>
+            </li>
+          </a>
         </ul>
       </div>
       <div class="news_bg" data-aos="fade-up" data-aos-duration="2000"></div>
@@ -327,43 +337,7 @@
   <script src="./vendors/aos/js/aos.js"></script>
   <script>AOS.init();</script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script>
-    // DOM 載入完成之後
-    $(function () {
-
-      // 點擊
-      $("button.btn_drawer").on("click", function () {
-        // -open 的樣式切換
-        $(this).closest("div.right_sidebar").toggleClass("-open");
-      });
-
-      // hamburger icon 的切換
-      $("button.hamburger").on("click", function () {
-        $(this).toggleClass("is-active");
-      });
-
-    });
-
-    // 點擊按鈕，頁面滑到最上方
-    $("#go_top").on("click", function (e) {
-      e.preventDefault();
-      $('html, body').animate({
-        scrollTop: 0
-      }, 750);
-    });
-
-    function click_popup() {
-      if ($('#popup_a').hasClass('popup_open')) {
-        $('.overlay').css('opacity', 1);
-        $('.overlay').css('visibility', 'visible');
-      } else {
-        $('.overlay').css('opacity', 0);
-        $('.overlay').css('visibility', 'hidden');
-      }
-
-      $('#popup_a').toggleClass("popup_open");
-    }
-  </script>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>

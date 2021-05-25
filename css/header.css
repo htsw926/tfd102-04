@@ -10,6 +10,8 @@ div.banner div.logo{
   position: absolute;
   top: 5%;
   left: 12%;
+
+  transition: all .5s;
 }
 
 @media screen and (max-width: 575px){
@@ -40,6 +42,8 @@ div.banner div.logo h1{
   right:-30%;
   font-size: 18px;
   color:#F6E1B4;
+
+  transition: all .5s;
 }
 
 @media screen and (max-width: 575px){
@@ -63,6 +67,8 @@ div.banner ul{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  transition: all .5s;
 }
 
 @media screen and (max-width: 575px){
