@@ -63,7 +63,7 @@
     </div>
   </header>
 
-  <div id="hamburger" class="hbg" data-aos="fade-up">
+  <div id="hamburger" class="hbg" data-aos="fade-down">
     <a href="javascript:click_popup();" id="popup_a" class="popup_open">
       <button class="hamburger hamburger--spring" type="button">
         <span class="hamburger-box">
@@ -242,15 +242,8 @@
         $(this).toggleClass("is-active");
       });
 
-      const hamburger = document.querySelector('#hamburger');
 
-      if (window.innerWidth < 575) {
-        hamburger.dataset.aosOffset = 0;
-        // $('#hamburger').data('aos-offset', 0);
-      } else {
-        hamburger.dataset.aosOffset = 1000;
-        // $('#hamburger').data('aos-offset', 1200);
-      }
+
 
       AOS.init();
 
