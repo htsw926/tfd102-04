@@ -36,11 +36,9 @@ function click_popup() {
 
 
 
-
+/*
 const hamburger = document.querySelector('#hamburger');
 
-
-/*
 if (window.innerWidth <= 575) {
   hamburger.dataset.aosOffset = 0;
   // $('#hamburger').data('aos-offset', 0);
@@ -53,3 +51,5 @@ if (window.innerWidth <= 575) {
   hamburger.dataset.aosOffset = 1000;
   // $('#hamburger').data
 }*/
+
+

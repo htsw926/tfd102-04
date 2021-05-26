@@ -37,12 +37,12 @@ div.banner{
 }
 @media screen and (min-width: 768px) and (max-width: 991px){
   div.banner{
-    height: 645px;
+    height: 660px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px){
   div.banner{
-    height: 740px;
+    height: 790px;
   }
 }
 @media screen and (min-width: 1200px){
@@ -271,7 +271,7 @@ div.about{
   /* border: 1px solid white; */
   margin: 0 auto;
   max-width: 100%;
-  height: 800px;
+  height: 790px;
   position: relative;
 }
 div.about div.about_pic{
@@ -286,6 +286,37 @@ div.about div.about_pic{
   right:20%;
   z-index: 0;
 }
+
+@media screen and (max-width: 575px){
+  div.about{
+    width: 575px;
+    height: 450px;
+  }
+  div.about div.about_pic{
+    width: 100%;
+    height: 100%;
+    right: 0;
+    margin-top: 0px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+  div.about{
+    width: 600px;
+    height: 450px;
+  }
+  div.about div.about_pic{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    margin-top: 0px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+  div.about div.about_pic{
+    right: 10%;
+  }
+}
+
 div.about div.about_title{
   width: 100px;
   height: 50px;
@@ -310,6 +341,28 @@ div.about div.about_txt{
   left: 20%;
   z-index: 2;
 }
+
+@media screen and (max-width: 575px){
+  div.about div.about_title{
+    left: 4%;
+    top:15%;
+  }
+  div.about div.about_txt{
+    left: 14%;
+    top:35%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+  div.about div.about_title{
+    left: 16%;
+    top: 15%;
+  }
+  div.about div.about_txt{
+    left: 35%;
+    top:35%;
+  }
+}
+
 div.about div.about_bg{
   /* border: 1px solid red; */
   background-color: hsla(74, 26%, 60%, 0.75);
@@ -320,6 +373,20 @@ div.about div.about_bg{
   top: 25%;
   z-index: 1;
 }
+
+@media screen and (max-width: 575px){
+  div.about div.about_bg{
+    left: 4%;
+    top: 30%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+  div.about div.about_bg{
+    left: 22%;
+    top: 30%;
+  }
+}
+
 div.about div.about_btn{
   /* border: 1px solid red; */
   width: 150px;
@@ -340,6 +407,18 @@ div.about div.about_btn:hover{
   background-color: #A7B47F;
   cursor: pointer;
 }
+
+@media screen and (max-width: 575px){
+  div.about div.about_btn{
+    display: none;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    div.about div.about_btn{
+    display: none;
+  }
+}
+
 div.leaf_bg1{
   /* border: 1px solid red; */
   width:180px;
@@ -361,13 +440,25 @@ div.leaf_bg2{
   background-size: 100%;
   background-repeat: no-repeat;
 }
+
+@media screen and (max-width: 575px){
+  div.leaf_bg1, div.leaf_bg2{
+    display: none;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+  div.leaf_bg1, div.leaf_bg2{
+    display: none;
+  }
+}
+
 div.hover_img{
-  /* border: 1px solid red; */
+  border: 1px solid red;
   position: relative;
 }
 div.hover_bg{
-  /* border: 1px solid red; */
-  width: 100%;
+  /* border: 1px solid white; */
+  max-width: 100%;
   height: 600px;
   background: url("../images/index/005_hoverbg.jpg");
   background-size: cover;
@@ -375,6 +466,13 @@ div.hover_bg{
   opacity: .5;
   z-index: 0;
 }
+
+@media screen and (max-width: 575px){
+	div.hover_bg{
+    width: 575px;
+  }
+}
+
 div.hover_img div.hover_slogan_title{
   color:#F6E1B4;
   /* font-size: 26px; */
@@ -385,14 +483,14 @@ div.hover_img div.hover_slogan_title{
   z-index: 1;
 }
 
-/* div.hover_btn{
+div.hover_btn{
   border: 1px solid red;
   width: 100%;
   height: 100px;
   position: absolute;
   top: 0;
   right: 0;
-} */
+}
 
 
 div.hover_slogan_bg{
