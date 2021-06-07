@@ -86,14 +86,24 @@ p.con{
   }
   div.footer_left{
     margin: 0 auto;
+    height: 220px;
+    width: 100%;
   }
   div.footer_center{
     margin: 0 auto;
-    height: 200px;
+    height: 140px;
+    width: 100%;
   }
   div.footer_right{
     margin: 0 auto;
-    height: 200px;
+    height: 150px;
+    width: 100%;
+  }
+  div.footer_left ul.content_list li{
+    font-size: 10px;
+  }
+  p.con{
+    font-size: 10px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px){

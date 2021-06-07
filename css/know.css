@@ -20,6 +20,33 @@ div.banner{
   position: relative;
 }
 
+
+@media screen and (max-width: 575px){
+  div.banner{
+    height: 270px;  
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+  div.banner{
+    height: 370px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+  div.banner{
+    height: 470px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+  div.banner{
+    height: 570px;
+  }
+}
+@media screen and (min-width: 1200px){
+  div.banner{
+    height: 650px;
+  }
+}
+
 div.page_title{
   /* border: 1px solid red; */
   text-align: center;
@@ -38,45 +65,143 @@ div.page_title div.title_txt{
   transform: translateX(-50%); 
 }
 
-div.content{
-  /* border: 1px solid red; */
-  width: 750px;
-  padding-top: 45px;
-  padding-bottom: 50px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 50px;
+@media screen and (max-width: 575px){
+  div.page_title{
+    padding-top: 2px;
+    padding-bottom: 60px;
+  }
+  div.page_title div.title_txt h2{
+    font-size: 16px;;
+  }
 }
-div.know_bg{
+@media screen and (min-width: 576px) and (max-width: 767px){
+  div.page_title{
+    padding-top: 0px;
+    padding-bottom: 60px;
+  }
+  div.page_title div.title_txt h2{
+    font-size: 18px;;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+  div.page_title{
+    padding-top: 0px;
+    padding-bottom: 60px;
+  }
+}
+
+div.container{
+  /* border: 1px solid red; */
+  width: 70vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+div.container div.con_group1{
+  /* border: 1px solid blue; */
+  width: 100%;
+  display: flex;
+}
+
+@media screen and (max-width: 575px){
+	div.container div.con_group1{
+    display: block;
+    margin-left: 13%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+	div.container div.con_group1{
+    display: block;
+    margin-left: 19%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+  div.container{
+    width: 90vw;
+  }
+	div.container div.con_group1{
+    width: 95%;
+    margin-left: 5%;
+  }
+}
+
+div.container div.con_body{
   /* border: 1px solid white; */
-  height: 250px;
-  width: 350px;
+  width: 45%;
+  margin-left: 50px;
+  margin-right: 50px;
   position: relative;
 }
-div.txt_bg{
-  /* border: 1px solid blue; */
-  background-color: white;
-  width: 250px;
+div.container div.con_body div.txt_bg{
+  background-color: hsla(74, 26%, 60%, 0.75);
+  border-radius: 2px;
+  width: 70%;
   height: 110px;
   position: absolute;
-  top: 50%;
-  left: 50px;
-  transform: translateY(-50%); 
-  opacity: .6;
-}
-div.know_bg p.p1{
-  color: #2F2E29;
-  position: absolute;
-  top: 30%;
+  top: 28%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); 
 }
-div.know_bg p.date{
+div.container div.con_body div.txt_bg p.p1{
+  position: absolute;
+  color:white;
+  width: 80%;
+  top: 15%;
+  left: 65%;
+  transform: translateX(-50%); 
+}
+div.container div.con_body div.txt_bg p.date{
+  position: absolute;
+  color:white;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); 
   font-family: "Amiri";
-  color: #2F2E29;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 575px){
+	div.container div.con_body{
+    margin-bottom: 20px;
+    width: 70%;
+    margin-left: 5px;
+  }
+  div.container div.con_body div.txt_bg p.p1{
+    left: 50%;
+  }
+  div.container div.con_body div.txt_bg{
+    top: 20%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+	div.container div.con_body{
+    margin-bottom: 20px;
+    width: 70%;
+    margin-left: 5px;
+  }
+  div.container div.con_body div.txt_bg p.p1{
+    left: 60%;
+  }
+  div.container div.con_body div.txt_bg{
+    top: 20%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+	div.container div.con_body{
+    margin-bottom: 20px;
+    width: 100%;
+    margin-left: 5px;
+  }
+  div.container div.con_body div.txt_bg p.p1{
+    left: 60%;
+  }
+  div.container div.con_body div.txt_bg{
+    top: 20%;
+  }
+}
+
+div.container div.con_body img{
+  width: 100%;
+  max-width: 350px;
 }

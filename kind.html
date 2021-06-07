@@ -10,6 +10,9 @@
   <link href="./css/footer.css" rel="stylesheet">
   <link href="./css/font.css" rel="stylesheet">
   <link href="./css/right_sp.css" rel="stylesheet">
+  <link rel="stylesheet" href="./vendors/aos/css/aos.css">
+  <link rel="stylesheet" href="./vendors/hamburger/hamburgers.css">
+  <link rel="stylesheet" href="./css/hamburgers.css">
 </head>
 
 <body>
@@ -17,41 +20,41 @@
   <header class="header">
     <div class="banner">
       <a href="./index.html">
-        <div class="logo">
+        <div class="logo" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
           <h1>煮好茗／享好茶</h1>
         </div>
       </a>
       <ul>
         <a href="./comm.html">
-          <li>
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1400">
             <h3>論茶</h3>
             <div class="line"></div>
             <h3>聯絡我們</h3>
           </li>
         </a>
         <a href="./products.html">
-          <li>
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1200">
             <h3>找茶</h3>
             <div class="line"></div>
             <h3>茶商品</h3>
           </li>
         </a>
         <a href="./about_tea.html">
-          <li>
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
             <h3>說茶</h3>
             <div class="line"></div>
             <h3>關於茶</h3>
           </li>
         </a>
         <a href="./about_us.html">
-          <li>
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
             <h3>言茶</h3>
             <div class="line"></div>
             <h3>品牌故事</h3>
           </li>
         </a>
         <a href="./news.html">
-          <li>
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="600">
             <h3>新茶</h3>
             <div class="line"></div>
             <h3>最新消息</h3>
@@ -60,6 +63,65 @@
       </ul>
     </div>
   </header>
+
+
+  <div class="hbg" data-aos="fade-down">
+    <a href="javascript:click_popup();" id="popup_a" class="popup_open">
+      <button class="hamburger hamburger--spring" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </a>
+  </div>
+
+
+  <div id="popup1" class="overlay">
+    <div class="popup">
+      <a href="./index.html">
+        <div class="logo" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+          <h1>煮好茗／享好茶</h1>
+        </div>
+      </a>
+      <ul>
+        <a href="./comm.html">
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1400">
+            <h3>論茶</h3>
+            <div class="line"></div>
+            <h3>聯絡我們</h3>
+          </li>
+        </a>
+        <a href="./products.html">
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1200">
+            <h3>找茶</h3>
+            <div class="line"></div>
+            <h3>茶商品</h3>
+          </li>
+        </a>
+        <a href="./about_tea.html">
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+            <h3>說茶</h3>
+            <div class="line"></div>
+            <h3>關於茶</h3>
+          </li>
+        </a>
+        <a href="./about_us.html">
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
+            <h3>言茶</h3>
+            <div class="line"></div>
+            <h3>品牌故事</h3>
+          </li>
+        </a>
+        <a href="./news.html">
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="600">
+            <h3>新茶</h3>
+            <div class="line"></div>
+            <h3>最新消息</h3>
+          </li>
+        </a>
+      </ul>
+    </div>
+  </div>
 
   <div class="page_title">
     <div class="title_txt">
@@ -70,25 +132,39 @@
 
   <div class="kind_center">
     <div class="tea1">
-      <img class="png_l" src="./images/kind/002_1.png">
-      <img class="png_r" src="./images/kind/002_2.png">
-      <h4 class="tea_ti">阿里山金萱茶</h4>
-      <p>產地位於阿里山區，以台灣特有的品種「金萱」茶菁製成，<br>茶湯呈金黃色，帶有一股特殊濃郁的奶香味，<br>再加上高山氣的幽揚清香，入口甘甜滑潤，香氣撲鼻。<br>是烏龍茶中非常受大眾喜愛的茶品。</p>
+      <img class="png_l" src="./images/kind/002_1.png" data-aos="fade-right">
+      <img class="png_r" src="./images/kind/002_2.png" data-aos="fade-right">
+      <div class="txt_class">
+        <h4 class="tea_ti" data-aos="zoom-in-up">阿里山金萱茶</h4>
+        <p data-aos="zoom-in-up">
+          產地位於阿里山區，以台灣特有的品種「金萱」茶菁製成，<br>茶湯呈金黃色，帶有一股特殊濃郁的奶香味，<br>再加上高山氣的幽揚清香，入口甘甜滑潤，香氣撲鼻。<br>是烏龍茶中非常受大眾喜愛的茶品。</p>
+      </div>
     </div>
     <div class="tea2">
-      <img class="png_l" src="./images/kind/003_1.png">
-      <img class="png_r" src="./images/kind/003_2.png">
-      <h4 class="tea_ti">梨山高山茶</h4>
-      <p>產地位於海拔一八〇〇到二六〇〇公尺之梨山山脈，<br>終年雲霧繚繞，土壤有機質含量豐富，葉片肥厚，<br>果膠質含量高，茶湯濃稠，<br>餘韻回甘中透出高山的淡雅芳香。</p>
+      <img class="png_l" src="./images/kind/003_1.png" data-aos="fade-right">
+      <img class="png_r" src="./images/kind/003_2.png" data-aos="fade-right">
+      <div class="txt_class">
+        <h4 class="tea_ti" data-aos="zoom-in-up">梨山高山茶</h4>
+        <p data-aos="zoom-in-up">產地位於海拔一八〇〇到二六〇〇公尺之梨山山脈，<br>終年雲霧繚繞，土壤有機質含量豐富，葉片肥厚，<br>果膠質含量高，茶湯濃稠，<br>餘韻回甘中透出高山的淡雅芳香。
+        </p>
+      </div>
     </div>
     <div class="tea3">
-      <img class="png_l" src="./images/kind/004_1.png">
-      <img class="png_r" src="./images/kind/004_2.png">
-      <h4 class="tea_ti">文山包種茶</h4>
-      <p>茶園分布於海拔二〇〇到八〇〇公尺，<br>坪林地區山坡地，重山環繞，氣候終年溫潤涼爽。<br>屬輕發酵茶，茶乾成條索形，茶湯香氣清揚，花香怡人。</p>
+      <img class="png_l" src="./images/kind/004_1.png" data-aos="fade-right">
+      <img class="png_r" src="./images/kind/004_2.png" data-aos="fade-right">
+      <div class="txt_class">
+        <h4 class="tea_ti" data-aos="zoom-in-up">文山包種茶</h4>
+        <p data-aos="zoom-in-up">茶園分布於海拔二〇〇到八〇〇公尺，<br>坪林地區山坡地，重山環繞，氣候終年溫潤涼爽。<br>屬輕發酵茶，茶乾成條索形，茶湯香氣清揚，花香怡人。</p>
+      </div>
     </div>
   </div>
 
+  <div class="back">
+    <a href="./about_tea.html"><button type="button" class="back">
+        <p>返回關於茶</p>
+      </button>
+    </a>
+  </div>
 
 
   <div class="right_sidebar">
@@ -102,10 +178,16 @@
         <h3 class="sp_title">阿里山金萱｜原葉袋茶茶包12入</h3>
       </a>
       <h3 class="sp_num">NTD$ 360</h3>
-      <h3 class="sp_num2">*1</h3>
-      <button type="button" class="btn_spcar" onclick="location.href='./shopcar.html'">
-        <p>前往結帳</p>
-      </button>
+      <h3 class="sp_num2">數量　* 1</h3>
+
+      <div class="car_group">
+        <button type="button" class="btn_spcar2" onclick="location.href='./shopcar.html'">
+          <p>刪除項目</p>
+        </button>
+        <button type="button" class="btn_spcar" onclick="location.href='./shopcar.html'">
+          <p>前往結帳</p>
+        </button>
+      </div>
     </div>
   </div>
 
@@ -152,19 +234,10 @@
   </div>
 
 
+  <script src="./vendors/aos/js/aos.js"></script>
+  <script>AOS.init();</script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script>
-    // DOM 載入完成之後
-    $(function () {
-
-      // 點擊
-      $("button.btn_drawer").on("click", function () {
-        // -open 的樣式切換
-        $(this).closest("div.right_sidebar").toggleClass("-open");
-      });
-
-    });
-  </script>
+  <script src="./js/comm.js"></script>
 
 
 </body>

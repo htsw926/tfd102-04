@@ -1,0 +1,176 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Source Han Serif";
+}
+
+body{
+  background-color: #2F2E29;
+}
+
+div.banner{
+  /* border: 1px solid red; */
+  width:100%;
+  height: 650px;
+  background-image: url("../images/know/001_header.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
+@media screen and (max-width: 575px){
+  div.banner{
+    height: 270px;  
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+  div.banner{
+    height: 370px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+  div.banner{
+    height: 470px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+  div.banner{
+    height: 570px;
+  }
+}
+@media screen and (min-width: 1200px){
+  div.banner{
+    height: 650px;
+  }
+}
+
+div.page_title{
+  /* border: 1px solid red; */
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 40px;
+  color: #E39D7B;
+  padding-bottom: 80px;
+  padding-top: 20px;
+}
+div.page_title div.title_txt{
+  border-bottom: 3px solid #E39D7B;
+  width: 300px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); 
+}
+
+@media screen and (max-width: 575px){
+  div.page_title{
+    padding-top: 2px;
+    padding-bottom: 60px;
+  }
+  div.page_title div.title_txt h2{
+    font-size: 16px;;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+  div.page_title{
+    padding-top: 0px;
+    padding-bottom: 60px;
+  }
+  div.page_title div.title_txt h2{
+    font-size: 18px;;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+  div.page_title{
+    padding-top: 0px;
+    padding-bottom: 60px;
+  }
+}
+
+div.container{
+  border: 1px solid red;
+  width: 60%;
+  padding-top: 45px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 100px 100px;
+  grid-template-rows: 80px 80px; 
+  grid-column-gap: 300px;
+  grid-row-gap: 250px;
+}
+
+
+
+@media screen and (max-width: 575px){
+	div.container{
+    width: 75%;
+    display: block;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+	div.container{
+    width: 48%;
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+	div.container{
+    width: 80%;
+  }
+}
+
+div.know_bg{
+  border: 1px solid white;
+  height: 250px;
+  width: 350px;
+  position: relative;
+}
+div.know_bg img{
+  width: 100%;
+}
+
+
+@media screen and (max-width: 575px){
+	div.know_bg{
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+	div.know_bg{
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+	
+}
+
+div.txt_bg{
+  /* border: 1px solid blue; */
+  background-color: white;
+  width: 250px;
+  height: 110px;
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%); 
+  opacity: .6;
+}
+div.know_bg p.p1{
+  color: #2F2E29;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+div.know_bg p.date{
+  font-family: "Amiri";
+  color: #2F2E29;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+}

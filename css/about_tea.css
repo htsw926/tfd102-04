@@ -10,6 +10,15 @@ body{
   background-color: #2F2E29;
 }
 
+header{
+  /* border: 1px solid red; */
+  width: 100%;
+}
+
+h3.at_h3{
+  color: #E39D7B;
+}
+
 div.banner{
   /* border: 1px solid red; */
   width:100%;
@@ -19,6 +28,34 @@ div.banner{
   background-repeat: no-repeat;
   position: relative;
 }
+
+@media screen and (max-width: 575px){
+  div.banner{
+    height: 270px;  
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+  div.banner{
+    height: 370px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+  div.banner{
+    height: 470px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+  div.banner{
+    height: 570px;
+  }
+}
+@media screen and (min-width: 1200px){
+  div.banner{
+    height: 650px;
+  }
+}
+
+
 
 div.page_title{
   /* border: 1px solid red; */
@@ -38,12 +75,44 @@ div.page_title div.title_txt{
   transform: translateX(-50%); 
 }
 
+@media screen and (max-width: 575px){
+  div.page_title{
+    padding-top: 2px;
+    padding-bottom: 60px;
+  }
+  div.page_title div.title_txt h2{
+    font-size: 16px;;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+  div.page_title{
+    padding-top: 0px;
+    padding-bottom: 60px;
+  }
+  div.page_title div.title_txt h2{
+    font-size: 18px;;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+  div.page_title{
+    padding-top: 0px;
+    padding-bottom: 60px;
+  }
+}
+
 div.content{
   /* border: 1px solid black; */
-  width: 1200px;
-  height: 900px;
+  width: 80%;
+  /* height: 900px; */
   margin: 0 auto;
   position: relative;
+}
+div.kind_group{
+  /* border: 1px solid red; */
+  width: 80%;
+  height: 250px;
+  position: relative;
+  margin: 0 auto;
 }
 div.kind{
   /* border: 1px solid red; */
@@ -56,6 +125,7 @@ div.kind{
   background-size: cover;
   background-position-x: -85px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background-repeat: no-repeat;
 }
 div.kind_bg{
   /* border: 1px solid red; */
@@ -66,17 +136,72 @@ div.kind_bg{
   top: 50%;
   background-color: hsla(20, 65%, 69%, 0.75);
 }
+
+@media screen and (max-width: 575px){
+	div.kind{
+    position: static;
+    margin: 0 auto;
+    width: 80%;
+  }
+  div.kind_bg{
+    right: 0;
+  }
+  h2.k_h2{
+    width: 50%;
+    position: absolute;
+    left: 70%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+		div.kind{
+    position: static;
+    margin: 0 auto;
+    width: 80%;
+  }
+  div.kind_bg{
+    right: 0;
+  }
+  h2.k_h2{
+    width: 50%;
+    position: absolute;
+    left: 70%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+	div.kind{
+    position: static;
+    margin: 0 auto;
+    width: 80%;
+  }
+  div.kind_bg{
+    right: 0;
+  }
+  h2.k_h2{
+    width: 50%;
+    position: absolute;
+    left: 70%;
+  }
+}
+
+div.know_group{
+  /* border: 1px solid red; */
+  width: 80%;
+  height: 350px;
+  position: relative;
+  margin: 0 auto;
+}
 div.knowledge{
   /* border: 1px solid red; */
   width: 450px;
   height: 230px;
   position: absolute;
   left: 20%;
-  top: 35%;
+  top: 20%;
   background-image: url("../images/about_tea/003_knowledge.jpg");
   background-size: cover;
   background-position-x: -85px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background-repeat: no-repeat;
 }
 div.knowledge_bg{
   /* border: 1px solid red; */
@@ -87,17 +212,85 @@ div.knowledge_bg{
   top: 50%;
   background-color: hsla(20, 65%, 69%, 0.75);
 }
-div.produce{
+
+
+
+@media screen and (max-width: 575px){
+  div.know_group{
+    height: 250px;
+  }
+	div.knowledge{
+    position: static;
+    margin: 0 auto;
+    width: 80%;
+  }
+  div.knowledge_bg{
+    right: 0;
+    top: 50%;
+  }
+  h2.n_h2{
+    width: 50%;
+    position: absolute;
+    left: 70%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+	div.know_group{
+    height: 250px;
+  }
+	div.knowledge{
+    position: static;
+    margin: 0 auto;
+    width: 80%;
+  }
+  div.knowledge_bg{
+    right: 0;
+    top: 50%;
+  }
+  h2.n_h2{
+    width: 50%;
+    position: absolute;
+    left: 70%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+	div.know_group{
+    height: 250px;
+  }
+	div.knowledge{
+    position: static;
+    margin: 0 auto;
+    width: 80%;
+  }
+  div.knowledge_bg{
+    right: 0;
+    top: 50%;
+  }
+  h2.n_h2{
+    width: 50%;
+    position: absolute;
+    left: 70%;
+  }
+}
+
+div.pd_group{
   /* border: 1px solid red; */
+  width: 80%;
+  height: 350px;
+  position: relative;
+  margin: 0 auto;
+}
+div.produce{
   width: 450px;
   height: 230px;
   position: absolute;
   left: 20%;
-  top: 65%;
+  top: 5%;
   background-image: url("../images/about_tea/004_produce.jpg");
   background-size: cover;
   background-position-x: -85px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background-repeat: no-repeat;
 }
 div.produce_bg{
   /* border: 1px solid red; */
@@ -108,9 +301,78 @@ div.produce_bg{
   top: 50%;
   background-color: hsla(20, 65%, 69%, 0.75);
 }
+
+@media screen and (max-width: 575px){
+  div.pd_group{
+    height: 250px;
+  }
+	div.produce{
+    position: static;
+    margin: 0 auto;
+    width: 80%;
+  }
+  div.produce_bg{
+    right: 0;
+    top: 50%;
+  }
+  h2.p_h2{
+    width: 50%;
+    position: absolute;
+    left: 70%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+	div.pd_group{
+    height: 250px;
+  }
+	div.produce{
+    position: static;
+    margin: 0 auto;
+    width: 80%;
+  }
+  div.produce_bg{
+    right: 0;
+    top: 50%;
+  }
+  h2.p_h2{
+    width: 50%;
+    position: absolute;
+    left: 70%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+	div.pd_group{
+    height: 250px;
+  }
+	div.produce{
+    position: static;
+    margin: 0 auto;
+    width: 80%;
+  }
+  div.produce_bg{
+    right: 0;
+    top: 50%;
+  }
+  h2.p_h2{
+    width: 50%;
+    position: absolute;
+    left: 70%;
+  }
+}
+
 div.content h2{
   position: absolute;
   top: 65%;
   right: -30%;
   color: #2F2E29;
+}
+
+div.produce_bg:hover{
+  box-shadow : 10px 10px 5px rgba(0,0,0,0.3);
+}
+div.knowledge_bg:hover{
+  box-shadow : 10px 10px 5px rgba(0,0,0,0.3);
+}
+div.kind_bg:hover{
+  box-shadow : 10px 10px 5px rgba(0,0,0,0.3);
 }
