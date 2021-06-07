@@ -107,11 +107,26 @@ div.know_title h4.date{
   color: #F6E1B4;
 }
 div.know_img{
+  /* border: 1px solid blue; */
   height: 80vh;
+  width: 100%;
+  margin: 0 auto;
   background-image: url("../images/know/know_page.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
 }
+
+@media screen and (max-width: 575px){
+	div.know_img{
+    height: 250px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+	div.know_img{
+    height: 350px;
+  }
+}
+
 div.content h3{
   /* border: 1px solid blue; */
   padding-top: 40px;

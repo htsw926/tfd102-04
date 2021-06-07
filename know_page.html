@@ -10,6 +10,9 @@
   <link href="./css/footer.css" rel="stylesheet">
   <link href="./css/font.css" rel="stylesheet">
   <link href="./css/right_sp.css" rel="stylesheet">
+  <link rel="stylesheet" href="./vendors/hamburger/hamburgers.css">
+  <link rel="stylesheet" href="./css/hamburgers.css">
+  <link rel="stylesheet" href="./vendors/aos/css/aos.css">
 </head>
 
 <body>
@@ -61,6 +64,64 @@
     </div>
   </header>
 
+  <div class="hbg" data-aos="fade-down">
+    <a href="javascript:click_popup();" id="popup_a" class="popup_open">
+      <button class="hamburger hamburger--spring" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </a>
+  </div>
+
+
+  <div id="popup1" class="overlay">
+    <div class="popup">
+      <a href="./index.html">
+        <div class="logo" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+          <h1>煮好茗／享好茶</h1>
+        </div>
+      </a>
+      <ul>
+        <a href="./comm.html">
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1400">
+            <h3>論茶</h3>
+            <div class="line"></div>
+            <h3>聯絡我們</h3>
+          </li>
+        </a>
+        <a href="./products.html">
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1200">
+            <h3>找茶</h3>
+            <div class="line"></div>
+            <h3>茶商品</h3>
+          </li>
+        </a>
+        <a href="./about_tea.html">
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+            <h3>說茶</h3>
+            <div class="line"></div>
+            <h3>關於茶</h3>
+          </li>
+        </a>
+        <a href="./about_us.html">
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
+            <h3>言茶</h3>
+            <div class="line"></div>
+            <h3>品牌故事</h3>
+          </li>
+        </a>
+        <a href="./news.html">
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="600">
+            <h3>新茶</h3>
+            <div class="line"></div>
+            <h3>最新消息</h3>
+          </li>
+        </a>
+      </ul>
+    </div>
+  </div>
+
   <div class="page_title">
     <div class="title_txt">
       <h2>茶知識</h2>
@@ -70,13 +131,13 @@
   <div class="know_title">
     <h3>茶會過期嗎？正確的保存方式讓你的茶隨時維持最佳風味</h3>
     <h4 class="date">2021-04-01</h4>
-    <div class="know_img"></div>
+    <div class="know_img" data-aos="fade-down"></div>
     <div class="content">
       <h3>「茶葉放久了到底會不會過期？」</h3>
-      <p>你是否看過長輩的櫃子裡存放著大大小小<br><br>
+      <p data-aos="fade-down">你是否看過長輩的櫃子裡存放著大大小小<br><br>
         看似收藏已久的茶葉呢？究竟茶能不能久放珍藏，放久了還能喝嗎？</p>
       <h3>茶會過期嗎？茶葉的保存期限</h3>
-      <p>酒是越陳越香，那茶葉呢？大部分的茶葉在包裝上通常會將有效期限標示為2年<br><br>
+      <p data-aos="fade-down">酒是越陳越香，那茶葉呢？大部分的茶葉在包裝上通常會將有效期限標示為2年<br><br>
         但其實只要包裝妥當、保存良好，沒有讓茶葉受潮、受損，存放超過2年以上的茶葉也還是可以安心沖泡飲用的。<br><br>
         那要如何判斷茶業是否有受潮、變質呢？基本上可以從以下2點來看：<br><br>
         1.發霉<br>
@@ -87,7 +148,7 @@
         　　而若是採真空包裝的球狀茶葉，就要注意包裝是否有漏氣或是真空不完全的狀態<br><br>
         　　因為若失去真空包裝，球狀茶葉就會容易走味，失去原本的飽滿茶香喔！</p>
       <h3>如何維持茶葉不過期？正確保存的方法告訴你</h3>
-      <p>未開封茶葉：維持包裝完整性<br><br>
+      <p data-aos="fade-down">未開封茶葉：維持包裝完整性<br><br>
         未開封的茶葉除了要注意包裝是否有破損外，還要注意存放環境的溫度及濕度，建議盡量避免放在高溫潮濕的地方，以免儘管未開封，茶葉還是受到環境影響而變質。<br><br>
         開封後茶葉：隔絕空氣及濕氣<br><br>
         而開封後的茶葉更要注意開口的密封性，建議可以將茶葉移至密封罐內，盡量隔絕空氣及濕氣，並且不要存放於冰箱，以免拿進拿出的溫度差使得空氣中的水氣凝結，讓茶葉受潮變質。</p>
@@ -168,19 +229,10 @@
 
 
 
+  <script src="./vendors/aos/js/aos.js"></script>
+  <script>AOS.init();</script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script>
-    // DOM 載入完成之後
-    $(function () {
-
-      // 點擊
-      $("button.btn_drawer").on("click", function () {
-        // -open 的樣式切換
-        $(this).closest("div.right_sidebar").toggleClass("-open");
-      });
-
-    });
-  </script>
+  <script src="./js/index.js"></script>
 
 </body>
 
