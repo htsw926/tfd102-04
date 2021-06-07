@@ -8,7 +8,7 @@
 
 body{
   background-color: #2F2E29;
-  overflow-x: hidden;
+  
 }
 
 header{
@@ -211,6 +211,13 @@ div.about_tl2 h3{
 	div.about_tl2{
   left: 2%;
   top: 25%;
+  width: 300px;
+  height: 200px;
+  }
+  div.about_tl2 h3{
+  font-size: 18px;
+  margin-top: 60px;
+  line-height: 20px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px){
@@ -245,6 +252,7 @@ div.about_tr2{
 	div.about_tr2{
   top: 10%;
   right: 2%;
+  width: 320px;
   }
 }
 
@@ -279,19 +287,25 @@ div.about_td{
   right: 10%;
 }
 
-@media screen and (max-width: 575px){
-	div.about_td{
-  bottom: 23%;
-  right: 2%;
-  }
-}
-
-
 div.about_td h3{
   /* border: 1px solid blue; */
   margin-top: 110px;
   padding-left: 30px;
 }
+
+@media screen and (max-width: 575px){
+	div.about_td{
+    bottom: 25%;
+    right: 2%;
+    height: 250px;
+    width: 280px;
+  }
+  div.about_td h3{
+    margin-top: 70px;
+    font-size: 18px;
+  }
+}
+
 div.about_bottom{
   /* border: 1px solid red; */
   background-color:  hsla(66, 28%, 79%, 0.75);
@@ -314,10 +328,10 @@ div.about_bottom_txt p{
   text-align: center;
 }
 div.about_bottom_txt{
-  width: 700px;
-  height: 300px;
+  width: 80%;
+  height: 80vh;
   position: absolute;
-  bottom: 20%;
+  bottom: 17%;
   left: 50%;
   transform: translateX(-50%); 
   color: #2F2E29;
@@ -326,7 +340,7 @@ div.about_bottom_txt{
 
 @media screen and (max-width: 575px){
 	div.about_bottom_txt{
-    bottom: 2%;
+    height: 10vh;
   }
 }
 

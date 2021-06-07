@@ -10,6 +10,9 @@
   <link href="./css/footer.css" rel="stylesheet">
   <link href="./css/font.css" rel="stylesheet">
   <link href="./css/right_sp.css" rel="stylesheet">
+  <link rel="stylesheet" href="./vendors/aos/css/aos.css">
+  <link rel="stylesheet" href="./vendors/hamburger/hamburgers.css">
+  <link rel="stylesheet" href="./css/hamburgers.css">
 </head>
 
 <body>
@@ -17,41 +20,41 @@
   <header class="header">
     <div class="banner">
       <a href="./index.html">
-        <div class="logo">
+        <div class="logo" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
           <h1>煮好茗／享好茶</h1>
         </div>
       </a>
       <ul>
         <a href="./comm.html">
-          <li>
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1400">
             <h3>論茶</h3>
             <div class="line"></div>
             <h3>聯絡我們</h3>
           </li>
         </a>
         <a href="./products.html">
-          <li>
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1200">
             <h3>找茶</h3>
             <div class="line"></div>
             <h3>茶商品</h3>
           </li>
         </a>
         <a href="./about_tea.html">
-          <li>
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
             <h3>說茶</h3>
             <div class="line"></div>
             <h3>關於茶</h3>
           </li>
         </a>
         <a href="./about_us.html">
-          <li>
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
             <h3>言茶</h3>
             <div class="line"></div>
             <h3>品牌故事</h3>
           </li>
         </a>
         <a href="./news.html">
-          <li>
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="600">
             <h3>新茶</h3>
             <div class="line"></div>
             <h3>最新消息</h3>
@@ -61,6 +64,66 @@
     </div>
   </header>
 
+  <div class="hbg" data-aos="fade-down">
+    <a href="javascript:click_popup();" id="popup_a" class="popup_open">
+      <button class="hamburger hamburger--spring" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </a>
+  </div>
+
+
+  <div id="popup1" class="overlay">
+    <div class="popup">
+      <a href="./index.html">
+        <div class="logo" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+          <h1>煮好茗／享好茶</h1>
+        </div>
+      </a>
+      <ul>
+        <a href="./comm.html">
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1400">
+            <h3>論茶</h3>
+            <div class="line"></div>
+            <h3>聯絡我們</h3>
+          </li>
+        </a>
+        <a href="./products.html">
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1200">
+            <h3>找茶</h3>
+            <div class="line"></div>
+            <h3>茶商品</h3>
+          </li>
+        </a>
+        <a href="./about_tea.html">
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+            <h3>說茶</h3>
+            <div class="line"></div>
+            <h3>關於茶</h3>
+          </li>
+        </a>
+        <a href="./about_us.html">
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
+            <h3>言茶</h3>
+            <div class="line"></div>
+            <h3>品牌故事</h3>
+          </li>
+        </a>
+        <a href="./news.html">
+          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="600">
+            <h3>新茶</h3>
+            <div class="line"></div>
+            <h3>最新消息</h3>
+          </li>
+        </a>
+      </ul>
+    </div>
+  </div>
+
+
+
   <div class="page_title">
     <div class="title_txt">
       <h2>製茶流程</h2>
@@ -69,37 +132,37 @@
 
   <div class="space"></div>
 
-  <div class="content1">
+  <div class="content1" data-aos="flip-up">
     <div class="step1">
       <h3 class="h3_1">採菁</h3>
       <p class="p_1">以食指與姆指挾住葉間幼梗的中部，<br>輕柔採摘一心二葉或三葉的新芽。</p>
     </div>
   </div>
-  <div class="content2">
+  <div class="content2" data-aos="flip-up">
     <div class="step2">
       <h3 class="h3_2">日光萎凋</h3>
       <p class="p_2">將茶菁放置於日光下使其水分蒸散，<br>並進行發酵作用。</p>
     </div>
   </div>
-  <div class="content1">
+  <div class="content1" data-aos="flip-up">
     <div class="step3">
       <h3 class="h3_3">室內萎凋及攪拌</h3>
       <p class="p_3">於室內繼續日光萎凋的發酵作用，<br>翻動茶葉可令葉緣細胞摩擦破損，<br>促進發酵作用，<br>也讓水分均勻消散。</p>
     </div>
   </div>
-  <div class="content2">
+  <div class="content2" data-aos="flip-up">
     <div class="step4">
       <h3 class="h3_4">殺菁</h3>
       <p class="p_4">藉由高溫去除菁味，同時抑制茶葉發酵，<br>使茶葉保有半發酵特有的滋味及香氣。<br>殺菁後茶葉將變得柔軟，利於後續的揉捻工作。</p>
     </div>
   </div>
-  <div class="content1">
+  <div class="content1" data-aos="flip-up">
     <div class="step5">
       <h3 class="h3_5">揉捻</h3>
       <p class="p_5">經揉捻的茶葉捲曲成條狀，<br>欲製成球型茶，需將茶葉包裹於布巾中，<br>以手工或機器多次來回搓壓，使其成型；<br>同時，揉捻後茶葉流出的汁液會附著於葉片表面，<br>增加沖泡時的風味。</p>
     </div>
   </div>
-  <div class="content2">
+  <div class="content2" data-aos="flip-up">
     <div class="step6">
       <h3 class="h3_6">乾燥</h3>
       <p class="p_6">利用高溫將茶葉的含水量控制於3-5%，<br>並停止茶葉的酵素活性，穩定茶葉品質。</p>
@@ -175,19 +238,10 @@
       href="https://www.facebook.com/webindex/">[TibaMe-前端設計工程師養成班]</a>，後續會由專人協助處理
   </div>
 
+  <script src="./vendors/aos/js/aos.js"></script>
+  <script>AOS.init();</script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script>
-    // DOM 載入完成之後
-    $(function () {
-
-      // 點擊
-      $("button.btn_drawer").on("click", function () {
-        // -open 的樣式切換
-        $(this).closest("div.right_sidebar").toggleClass("-open");
-      });
-
-    });
-  </script>
+  <script src="./js/comm.js"></script>
 
 
 </body>

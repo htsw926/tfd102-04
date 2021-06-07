@@ -20,6 +20,32 @@ div.banner{
   position: relative;
 }
 
+@media screen and (max-width: 575px){
+  div.banner{
+    height: 270px;  
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+  div.banner{
+    height: 370px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+  div.banner{
+    height: 470px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+  div.banner{
+    height: 570px;
+  }
+}
+@media screen and (min-width: 1200px){
+  div.banner{
+    height: 650px;
+  }
+}
+
 div.page_title{
   /* border: 1px solid red; */
   text-align: center;
@@ -38,23 +64,77 @@ div.page_title div.title_txt{
   transform: translateX(-50%); 
 }
 
+@media screen and (max-width: 575px){
+  div.page_title{
+    padding-top: 2px;
+    padding-bottom: 60px;
+  }
+  div.page_title div.title_txt h2{
+    font-size: 16px;;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+  div.page_title{
+    padding-top: 0px;
+    padding-bottom: 60px;
+  }
+  div.page_title div.title_txt h2{
+    font-size: 18px;;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+  div.page_title{
+    padding-top: 0px;
+    padding-bottom: 60px;
+  }
+}
+
 div.space{
   height: 50px;
 }
 div.content1{
   /* border: 1px solid red; */
-  width: 800px;
+  width: 60%;
   height: 300px;
   margin: 0 auto;
 }
 div.content2{
   /* border: 1px solid red; */
-  width: 800px;
+  width: 60%;
   height: 300px;
   margin: 0 auto;
   position: relative;
 }
-
+@media screen and (max-width: 575px){
+	div.content1{
+    width: 80%;
+    height: 400px;
+  }
+  div.content2{
+    width: 80%;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+	div.content1{
+    width: 80%;
+    height: 400px;
+  }
+  div.content2{
+    width: 80%;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+	div.content1{
+    width: 90%;
+    height: 430px;
+  }
+  div.content2{
+    width: 90%;
+    height: 430px;
+  }
+}
 div.step1{
   /* border: 1px solid white; */
   width: 380px;
@@ -63,6 +143,17 @@ div.step1{
   background-size: 100%;
   background-repeat: no-repeat;
   position: relative;
+}
+@media screen and (max-width: 575px){
+	div.step1{
+    width: 100%;
+    height: 150px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+	div.step1{
+    width: 100%;
+  }
 }
 div.step3{
   /* border: 1px solid white; */
@@ -73,6 +164,17 @@ div.step3{
   background-repeat: no-repeat;
   position: relative;
 }
+@media screen and (max-width: 575px){
+	div.step3{
+    width: 100%;
+    height: 150px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+	div.step3{
+    width: 100%;
+  }
+}
 div.step5{
   /* border: 1px solid white; */
   width: 380px;
@@ -81,6 +183,17 @@ div.step5{
   background-size: 100%;
   background-repeat: no-repeat;
   position: relative;
+}
+@media screen and (max-width: 575px){
+	div.step5{
+    width: 100%;
+    height: 150px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+	div.step5{
+    width: 100%;
+  }
 }
 div.step2{
   /* border: 1px solid white; */
@@ -93,6 +206,17 @@ div.step2{
   position: absolute;
   right: 0;
 }
+@media screen and (max-width: 575px){
+	div.step2{
+    width: 100%;
+    height: 150px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+	div.step2{
+    width: 100%;
+  }
+}
 div.step4{
   /* border: 1px solid white; */
   width: 380px;
@@ -104,6 +228,17 @@ div.step4{
   position: absolute;
   right: 0;
 }
+@media screen and (max-width: 575px){
+	div.step4{
+    width: 100%;
+    height: 150px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+	div.step4{
+    width: 100%;
+  }
+}
 div.step6{
   /* border: 1px solid white; */
   width: 380px;
@@ -114,6 +249,17 @@ div.step6{
   margin-bottom: 80px;
   position: absolute;
   right: 0;
+}
+@media screen and (max-width: 575px){
+	div.step6{
+    width: 100%;
+    height: 150px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+	div.step6{
+    width: 100%;
+  }
 }
 h3.h3_1{
   /* border: 1px solid white; */
@@ -129,6 +275,43 @@ p.p_1{
   right: -72%;
   top: 45%;
 }
+
+@media screen and (max-width: 575px){
+	h3.h3_1{
+    left: 0;
+    top: 110%;
+    width: 100%;
+  }
+  p.p_1{
+    left: 0;
+    top: 130%;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+	h3.h3_1{
+    left: 0;
+    top: 110%;
+    width: 100%;
+  }
+  p.p_1{
+    left: 0;
+    top: 130%;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+	h3.h3_1{
+    left: 50%;
+    top: 115%;
+    width: 100%;
+  }
+  p.p_1{
+    left: 55%;
+    top: 130%;
+    width: 100%;
+  }
+}
 h3.h3_2{
   /* border: 1px solid white; */
   position: absolute;
@@ -142,6 +325,43 @@ p.p_2{
   position: absolute;
   left: -72%;
   top: 45%;
+}
+
+@media screen and (max-width: 575px){
+	h3.h3_2{
+    left: 0;
+    top: 110%;
+    width: 100%;
+  }
+  p.p_2{
+    left: 0;
+    top: 130%;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+	h3.h3_2{
+    left: 0;
+    top: 110%;
+    width: 100%;
+  }
+  p.p_2{
+    left: 0;
+    top: 130%;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+	h3.h3_2{
+    left: -31.5%;
+    top: 115%;
+    width: 100%;
+  }
+  p.p_2{
+    left: -26.5%;
+    top: 130%;
+    width: 100%;
+  }
 }
 h3.h3_3{
   /* border: 1px solid white; */
@@ -157,6 +377,42 @@ p.p_3{
   right: -68%;
   top: 45%;
 }
+@media screen and (max-width: 575px){
+	h3.h3_3{
+    left: 0;
+    top: 110%;
+    width: 100%;
+  }
+  p.p_3{
+    left: 0;
+    top: 130%;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+	h3.h3_3{
+    left: 0;
+    top: 110%;
+    width: 100%;
+  }
+  p.p_3{
+    left: 0;
+    top: 130%;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+	h3.h3_3{
+    left: 50%;
+    top: 115%;
+    width: 100%;
+  }
+  p.p_3{
+    left: 55%;
+    top: 130%;
+    width: 100%;
+  }
+}
 h3.h3_4{
   /* border: 1px solid white; */
   position: absolute;
@@ -170,6 +426,42 @@ p.p_4{
   position: absolute;
   left: -93%;
   top: 45%;
+}
+@media screen and (max-width: 575px){
+	h3.h3_4{
+    left: 0;
+    top: 110%;
+    width: 100%;
+  }
+  p.p_4{
+    left: 0;
+    top: 130%;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+	h3.h3_4{
+    left: 0;
+    top: 110%;
+    width: 100%;
+  }
+  p.p_4{
+    left: 0;
+    top: 130%;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+	h3.h3_4{
+    left: -31.5%;
+    top: 115%;
+    width: 100%;
+  }
+  p.p_4{
+    left: -26.5%;
+    top: 130%;
+    width: 100%;
+  }
 }
 h3.h3_5{
   /* border: 1px solid white; */
@@ -185,6 +477,42 @@ p.p_5{
   right: -98%;
   top: 45%;
 }
+@media screen and (max-width: 575px){
+	h3.h3_5{
+    left: 0;
+    top: 110%;
+    width: 100%;
+  }
+  p.p_5{
+    left: 0;
+    top: 130%;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+	h3.h3_5{
+    left: 0;
+    top: 110%;
+    width: 100%;
+  }
+  p.p_5{
+    left: 0;
+    top: 130%;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+	h3.h3_5{
+    left: 50%;
+    top: 115%;
+    width: 100%;
+  }
+  p.p_5{
+    left: 55%;
+    top: 130%;
+    width: 100%;
+  }
+}
 h3.h3_6{
   /* border: 1px solid white; */
   position: absolute;
@@ -198,4 +526,40 @@ p.p_6{
   position: absolute;
   left: -81%;
   top: 45%;
+}
+@media screen and (max-width: 575px){
+	h3.h3_6{
+    left: 0;
+    top: 110%;
+    width: 100%;
+  }
+  p.p_6{
+    left: 0;
+    top: 130%;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+	h3.h3_6{
+    left: 0;
+    top: 110%;
+    width: 100%;
+  }
+  p.p_6{
+    left: 0;
+    top: 130%;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+	h3.h3_6{
+    left: -31.5%;
+    top: 115%;
+    width: 100%;
+  }
+  p.p_6{
+    left: -26.5%;
+    top: 130%;
+    width: 100%;
+  }
 }
