@@ -10,6 +10,10 @@ body{
   background-color: #2F2E29;
 }
 
+
+h3.pd_h3{
+  color: #E39D7B;
+}
 div.banner{
   /* border: 1px solid red; */
   width:100%;
@@ -46,7 +50,6 @@ div.banner{
   }
 }
 
-
 div.page_title{
   /* border: 1px solid red; */
   text-align: center;
@@ -64,6 +67,7 @@ div.page_title div.title_txt{
   left: 50%;
   transform: translateX(-50%); 
 }
+
 @media screen and (max-width: 575px){
   div.page_title{
     padding-top: 2px;
@@ -88,6 +92,7 @@ div.page_title div.title_txt{
     padding-bottom: 60px;
   }
 }
+
 div.options{
   /* border: 1px solid red; */
   width: 450px;
@@ -101,9 +106,11 @@ div.options{
     padding-left: 40px;
   }
 }
+
 div.op1 > button > h4{
   color: #E39D7B;
 }
+
 div.op1, div.op2, div.op3, div.op4{
   /* border: 1px solid white; */
   width: 100px;
@@ -133,16 +140,20 @@ div.divider{
 
 div.product{
   /* border: 1px solid red; */
-  width: 80px;
+  width: 90%;
   /* height: 900px; */
-
+  /* max-width: 900px; */
+  /* margin-left: 10%; */
   margin-top: 50px;
 }
 div.group{
+  /* border: 1px solid yellow; */
+  /* width: 1000px; */
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
+  /* padding-left: 150px; */
 }
 
 @media screen and (max-width: 575px){
@@ -191,7 +202,6 @@ div.group{
   }
   div.product{
     padding-left: 50px;
-    width: 80%;
   }
 }
 
@@ -209,6 +219,11 @@ li.tea_big:hover{
   background-color: #E39D7B;
 }
 
+
+ul.tea_all{
+  width: 80%;
+}
+
 @media screen and (max-width: 575px){
 	li.tea_big{
     flex-basis: 45%;
@@ -223,6 +238,7 @@ li.tea_big:hover{
     margin-left: 5%;
   }
 }
+
 li.tea_small{
   /* border: 1px solid blue; */
   flex-basis: 23.5%;
@@ -245,6 +261,7 @@ li.tea_small:hover{
     margin-left: 5%;
   }
 }
+
 li.tea_big2{
   /* border: 1px solid white; */
   flex-basis: 49%;
@@ -269,6 +286,7 @@ li.tea_big2:hover{
     margin-left: 5%;
   }
 }
+
 li.tea_big a, li.tea_small a, li.tea_big2 a{
   text-decoration: none;
 }

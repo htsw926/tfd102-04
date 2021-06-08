@@ -10,52 +10,47 @@
   <link href="./css/footer.css" rel="stylesheet">
   <link href="./css/font.css" rel="stylesheet">
   <link href="./css/right_sp.css" rel="stylesheet">
-  <link rel="stylesheet" href="./vendors/aos/css/aos.css">
-  <link rel="stylesheet" href="./vendors/hamburger/hamburgers.css">
-  <link rel="stylesheet" href="./css/hamburgers.css">
-  <!-- JQuery lightSlider v1.1.6 -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" rel="stylesheet" />
 </head>
 
 <body>
   <header class="header">
     <div class="banner">
       <a href="./index.html">
-        <div class="logo" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+        <div class="logo">
           <h1>煮好茗／享好茶</h1>
         </div>
       </a>
       <ul>
         <a href="./comm.html">
-          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1400">
+          <li>
             <h3>論茶</h3>
             <div class="line"></div>
             <h3>聯絡我們</h3>
           </li>
         </a>
         <a href="./products.html">
-          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1200">
+          <li>
             <h3>找茶</h3>
             <div class="line"></div>
             <h3>茶商品</h3>
           </li>
         </a>
         <a href="./about_tea.html">
-          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+          <li>
             <h3>說茶</h3>
             <div class="line"></div>
             <h3>關於茶</h3>
           </li>
         </a>
         <a href="./about_us.html">
-          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
+          <li>
             <h3>言茶</h3>
             <div class="line"></div>
             <h3>品牌故事</h3>
           </li>
         </a>
         <a href="./news.html">
-          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="600">
+          <li>
             <h3>新茶</h3>
             <div class="line"></div>
             <h3>最新消息</h3>
@@ -64,63 +59,6 @@
       </ul>
     </div>
   </header>
-
-  <div class="hbg" data-aos="fade-down">
-    <a href="javascript:click_popup();" id="popup_a" class="popup_open">
-      <button class="hamburger hamburger--spring" type="button">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
-    </a>
-  </div>
-
-  <div id="popup1" class="overlay">
-    <div class="popup">
-      <a href="./index.html">
-        <div class="logo" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
-          <h1>煮好茗／享好茶</h1>
-        </div>
-      </a>
-      <ul>
-        <a href="./comm.html">
-          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1400">
-            <h3>論茶</h3>
-            <div class="line"></div>
-            <h3>聯絡我們</h3>
-          </li>
-        </a>
-        <a href="./products.html">
-          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1200">
-            <h3>找茶</h3>
-            <div class="line"></div>
-            <h3>茶商品</h3>
-          </li>
-        </a>
-        <a href="./about_tea.html">
-          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
-            <h3>說茶</h3>
-            <div class="line"></div>
-            <h3>關於茶</h3>
-          </li>
-        </a>
-        <a href="./about_us.html">
-          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
-            <h3>言茶</h3>
-            <div class="line"></div>
-            <h3>品牌故事</h3>
-          </li>
-        </a>
-        <a href="./news.html">
-          <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="600">
-            <h3>新茶</h3>
-            <div class="line"></div>
-            <h3>最新消息</h3>
-          </li>
-        </a>
-      </ul>
-    </div>
-  </div>
 
   <div class="page_title">
     <div class="title_txt">
@@ -162,21 +100,14 @@
 
   <div class="pd_all">
     <div class="pd_left">
-      <div class="demo">
-        <ul id="lightSlider">
-          <li data-thumb="./images/products/006-2.png">
-            <img src="./images/products/006-2.png" />
-          </li>
-          <li data-thumb="./images/products/004_1.jpg">
-            <img src="./images/products/004_1.jpg" />
-          </li>
-          <li data-thumb="./images/products/004_2.jpg">
-            <img src="./images/products/004_2.jpg" />
-          </li>
-        </ul>
+      <div class="pd_img"></div>
+      <div class="pd_small">
+        <div class="pd_sm1"></div>
+        <div class="pd_sm2"></div>
+        <div class="pd_sm3"></div>
       </div>
-    </div>
 
+    </div>
     <div class="pd_right">
       <h2>阿里山金萱｜原葉袋茶茶包12入</h2>
       <p><br>- 【帶有天然奶香味的烏龍茶】</p>
@@ -190,8 +121,8 @@
         <img src="./images/products/plus.svg">
       </div>
       <div class="shop_btn">
-        <button type="button" class="shopcar" onclick="location.href='#'">加入購物車</button>
-        <button type="button" class="buynow" onclick="location.href='./shopcar.html'">立即購買</button>
+        <button type="button" class="shopcar" onclick="location.href='./shopcar.html'">加入購物車</button>
+        <button type="button" class="buynow" onclick="location.href='#'">立即購買</button>
       </div>
       <div class="desc"></div>
       <div class="spec">
@@ -237,24 +168,13 @@
         <h3 class="sp_title">阿里山金萱｜原葉袋茶茶包12入</h3>
       </a>
       <h3 class="sp_num">NTD$ 360</h3>
-      <h3 class="sp_num2">數量　* 1</h3>
-
-      <div class="car_group">
-        <button type="button" class="btn_spcar2" onclick="location.href='./shopcar.html'">
-          <p>刪除項目</p>
-        </button>
-        <button type="button" class="btn_spcar" onclick="location.href='./shopcar.html'">
-          <p>前往結帳</p>
-        </button>
-      </div>
+      <h3 class="sp_num2">*1</h3>
+      <button type="button" class="btn_spcar" onclick="location.href='./shopcar.html'">
+        <p>前往結帳</p>
+      </button>
     </div>
   </div>
 
-  <div class="back_pos">
-    <button type="button" class="back" onclick="location.href='./products.html'">
-      <p>返回商品頁</p>
-    </button>
-  </div>
 
   <footer class="footer">
     <div class="footer_left">
@@ -298,13 +218,7 @@
 
 
 
-  <script src="./vendors/aos/js/aos.js"></script>
-  <script>AOS.init();</script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="./js/comm.js"></script>
-  <!-- jQuery v1.9.1 -->
-  <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
   <script>
     var coll = document.getElementsByClassName("collapsible");
     var i;
@@ -320,17 +234,8 @@
         }
       });
     }
-
-
-    $('#lightSlider').lightSlider({
-      gallery: true,
-      item: 1,
-      loop: true,
-      slideMargin: 0,
-      thumbItem: 3
-    });
-
   </script>
+
 </body>
 
 </html>
