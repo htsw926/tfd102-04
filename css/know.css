@@ -110,7 +110,7 @@ div.container div.con_group1{
 
 @media screen and (max-width: 575px){
 	div.container{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 90%;
     margin-left: 10%;
   }
@@ -144,7 +144,7 @@ div.container div.con_group1{
 }
 
 div.container div.con_body{
-  border: 1px solid white;
+  /* border: 1px solid white; */
   width: 45%;
   margin-left: 50px;
   margin-right: 50px;
