@@ -336,10 +336,10 @@ div.back{
   margin-bottom: 60px;
 }
 button.back{
-  background-color: #E39D7B;
+  background-color: transparent;
   border: none;
-  width: 125px;
-  height: 45px;
-  border-radius: 2px;
   cursor: pointer;
+}
+button.back img{
+  width: 30%;
 }

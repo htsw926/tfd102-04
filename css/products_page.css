@@ -370,36 +370,18 @@ div.content h4{
   text-align: center;
 }
 
-div.back_pos{
+div.back{
+  width: 125px;
   /* border: 1px solid red; */
-  width: 50%;
   margin: 0 auto;
-  padding-top: 5%;
-  padding-left: 19%;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 button.back{
-  background-color: #E39D7B;
-  width: 150px;
-  height: 30px;
+  background-color: transparent;
   border: none;
-  color: #2F2E29;
-}
-button.back:hover{
   cursor: pointer;
-  opacity: .8;
 }
-@media screen and (max-width: 575px){
-	div.back_pos{
-    padding-left: 5%;
-  }
-}
-@media screen and (min-width: 576px) and (max-width: 767px){
-	div.back_pos{
-    padding-left: 13%;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px){
-	div.back_pos{
-    padding-left: 13%;
-  }
+button.back img{
+  width: 30%;
 }
