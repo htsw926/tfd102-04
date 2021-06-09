@@ -94,6 +94,18 @@ div.options{
   height: 30px;
   margin: 0 auto;
 }
+
+@media screen and (max-width: 575px){
+	div.options{
+    width: 50%;
+    padding-left: 25px;
+    height: 160px;
+    /* border: 1px solid red; */
+  }
+}
+div.op1 > button > h4{
+  color: #E39D7B;
+}
 div.op1, div.op2, div.op3, div.op4{
   /* border: 1px solid white; */
   width: 100px;
@@ -115,9 +127,23 @@ div.options button:hover{
   color: #E39D7B;
   cursor: pointer;
 }
+
+@media screen and (max-width: 575px){
+	div.op1, div.op2, div.op3, div.op4{
+    width: 16px;
+    height: 30px;
+    /* border: 1px solid red; */
+  }
+}
+
 div.divider{
   display: inline-block;
   color: #A7B47F;
+}
+@media screen and (max-width: 575px){
+	div.divider{
+    width: 10%;
+  }
 }
 
 div.pd_all{
@@ -275,7 +301,7 @@ div.desc{
 
 @media screen and (max-width: 575px){
 	div.desc{
-    height: 400px;
+    height: 320px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px){
@@ -364,7 +390,7 @@ button.back:hover{
 }
 @media screen and (max-width: 575px){
 	div.back_pos{
-    padding-left: 9%;
+    padding-left: 5%;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px){

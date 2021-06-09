@@ -127,7 +127,7 @@ div.login h4{
 }
 
 button.log{
-  background-color: #A7B47F;
+  background-color: #E39D7B;
   border-radius: 5px;
   border: none;
   width: 120px;
@@ -144,7 +144,7 @@ button.log:hover{
 
 @media screen and (max-width: 575px){
 	button.log{
-    margin-left: 35%;
+    margin-left: 27%;
     margin-top: 0px;
   }
 }
@@ -405,10 +405,12 @@ div.noti p{
 
 @media screen and (max-width: 575px){
   div.checkout{
-    height: 1050px;
+    height: 1150px;
+    /* border: 1px solid white; */
   }
   div.checkout div.noti{
-    height: 500px;
+    /* border: 1px solid red; */
+    height: 610px;
   }
   div.noti p{
     font-size: 14px;
@@ -483,7 +485,7 @@ button.submit2{
   border: none;
   width: 120px;
   height: 35px;
-  margin: 0 auto;
+  margin-left: 10px;
 }
 button.submit2:hover{
   background-color: #F6E1B4;

@@ -331,7 +331,7 @@ div.about_bottom_txt{
   width: 80%;
   height: 80vh;
   position: absolute;
-  bottom: 17%;
+  bottom: 12%;
   left: 50%;
   transform: translateX(-50%); 
   color: #2F2E29;
@@ -341,6 +341,14 @@ div.about_bottom_txt{
 @media screen and (max-width: 575px){
 	div.about_bottom_txt{
     height: 10vh;
+    bottom: 17%;
+  }
+}
+
+@media screen and (min-width: 1200px){
+	div.about_bottom_txt{
+    height: 10vh;
+    bottom: 34%;
   }
 }
 

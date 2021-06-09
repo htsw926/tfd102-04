@@ -70,7 +70,7 @@ div.page_title div.title_txt{
     padding-bottom: 60px;
   }
   div.page_title div.title_txt h2{
-    font-size: 16px;
+    font-size: 16px;;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px){
@@ -79,7 +79,7 @@ div.page_title div.title_txt{
     padding-bottom: 60px;
   }
   div.page_title div.title_txt h2{
-    font-size: 18px;
+    font-size: 18px;;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px){
@@ -97,10 +97,8 @@ div.options{
 
 @media screen and (max-width: 575px){
 	div.options{
-    width: 50%;
-    padding-left: 25px;
-    height: 160px;
-    /* border: 1px solid red; */
+    width: 60%;
+    padding-left: 40px;
   }
 }
 div.op1 > button > h4{
@@ -128,24 +126,10 @@ div.options button:hover{
   cursor: pointer;
 }
 
-@media screen and (max-width: 575px){
-	div.op1, div.op2, div.op3, div.op4{
-    width: 16px;
-    height: 30px;
-    /* border: 1px solid red; */
-  }
-}
-
 div.divider{
   display: inline-block;
   color: #A7B47F;
 }
-@media screen and (max-width: 575px){
-	div.divider{
-    width: 10%;
-  }
-}
-
 
 div.product{
   /* border: 1px solid red; */
@@ -154,10 +138,6 @@ div.product{
 
   margin-top: 50px;
 }
-
-
-
-
 div.group{
   display: flex;
   justify-content: space-between;
@@ -166,13 +146,9 @@ div.group{
 }
 
 @media screen and (max-width: 575px){
-	ul.tea_all{
-  /* border: 1px solid red; */
-  padding-left: 2%;
-}
-  div.group{
-    width: 350px;
-    padding-left: 0px;
+	div.group{
+    width: 400px;
+    padding-left: 80px;
   }
   div.product{
     width: 400px;
