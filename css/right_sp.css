@@ -10,10 +10,10 @@ div.right_sidebar{
   padding: 10px 20px 10px 10px;
   border-radius: 10px 0 0 10px;
   backdrop-filter: blur(5px);
-  z-index: 2000;
+  z-index: 500;
 
   /* 過場效果 */
-  transition: transform 1s ease-in-out;
+  transition: transform .5s ;
 }
 div.right_sidebar.-open{
   transform: translate(0%, -50%);
