@@ -109,13 +109,14 @@ div.container div.con_group1{
 }
 
 @media screen and (max-width: 575px){
-	div.container{
-    border: 1px solid blue;
-    width: 90%;
-    margin-left: 10%;
-  }
-  div.container div.con_group1{
+	div.container div.con_group1{
     display: block;
+    margin-left: 12%;
+  }
+  div.container{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 50vw;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px){
@@ -144,7 +145,7 @@ div.container div.con_group1{
 }
 
 div.container div.con_body{
-  border: 1px solid white;
+  /* border: 1px solid white; */
   width: 45%;
   margin-left: 50px;
   margin-right: 50px;
@@ -165,7 +166,7 @@ div.container div.con_body div.txt_bg p.p1{
   color:white;
   width: 80%;
   top: 15%;
-  left: 50%;
+  left: 65%;
   transform: translateX(-50%); 
 }
 div.container div.con_body div.txt_bg p.date{
@@ -180,20 +181,20 @@ div.container div.con_body div.txt_bg p.date{
 @media screen and (max-width: 575px){
 	div.container div.con_body{
     margin-bottom: 20px;
-    width: 90%;
+    width: 70%;
     margin-left: 5px;
   }
   div.container div.con_body div.txt_bg p.p1{
-    left: 55%;
-    font-size: 16px;
+    left: 50%;
+    font-size: 10px;
   }
   div.container div.con_body div.txt_bg p.date{
     left: 50%;
-    font-size: 16px;
+    font-size: 10px;
   }
   div.container div.con_body div.txt_bg{
-    top: 60%;
-    width: 100%;
+    top: 20%;
+    width: 150px;
     height: 80px;
   }
 }
