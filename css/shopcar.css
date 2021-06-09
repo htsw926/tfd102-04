@@ -113,6 +113,7 @@ div.login h4{
 	div.login h4{
     font-size: 16px;
     text-align: center;
+    line-height: 24px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px){

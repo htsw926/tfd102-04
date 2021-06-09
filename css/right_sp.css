@@ -3,7 +3,7 @@ div.right_sidebar{
   top: 50%;
   right: 0;
   transform: translate(100%, -50%);
-  min-height: 100%;
+  min-height: 80%;
   width: 40%;
   background-color: hsla(41, 79%, 84%, 0.85);
   color: #2F2E29;
@@ -197,15 +197,20 @@ button.btn_spcar2:hover{
 
 
 @media screen and (max-width: 575px){
+  div.car_group{
+    display: block;
+    margin-left: 25px;
+  }
+  
   button.btn_spcar{
-    width: 60%;
-    margin-left: 20px ;
+    width: 80%;
+    /* margin-left: 20px ; */
   }
   button.btn_spcar > p{
     font-size: 12px;
   }
   button.btn_spcar2{
-    width: 60%;
+    width: 80%;
   }
   button.btn_spcar2 > p{
     font-size: 12px;

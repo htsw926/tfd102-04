@@ -505,6 +505,7 @@ div.hover_img div.hover_slogan_title{
 @media screen and (max-width: 575px){
 	div.hover_img div.hover_slogan_title > h6{
     font-size: 20px;
+    text-align: center;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px){
