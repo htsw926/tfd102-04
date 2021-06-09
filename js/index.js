@@ -5,6 +5,7 @@ $(function () {
   $("button.btn_drawer").on("click", function () {
     // -open 的樣式切換
     $(this).closest("div.right_sidebar").toggleClass("-open");
+    console.log("123123123");
   });
 
   // hamburger icon 的切換
