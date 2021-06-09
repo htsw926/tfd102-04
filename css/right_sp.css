@@ -5,7 +5,7 @@ div.right_sidebar{
   transform: translate(100%, -50%);
   min-height: 80%;
   width: 40%;
-  background-color: hsla(41, 79%, 84%, 0.85);
+  background-color: hsla(66, 28%, 79%, 0.95);
   color: #2F2E29;
   padding: 10px 20px 10px 10px;
   border-radius: 10px 0 0 10px;
@@ -23,7 +23,7 @@ div.right_sidebar.-open{
 /* 展開的按鈕 */
 div.right_sidebar button.btn_drawer{
   background: none;
-  background-color: #F6E1B4;
+  background-color: #D5D8B9;
   position: absolute;
   left: 0;
   top: 50%;
@@ -173,46 +173,44 @@ div.car_group{
   padding-top: 5%;
 }
 button.btn_spcar{
-  width: 40%;
-  height: 35px;
-  background-color: #E39D7B;
+  background-color: transparent;
+}
+button.btn_spcar img{
+  width: 30%;
   border: none;
 }
 button.btn_spcar:hover{
-  background-color: #F6E1B4;
+  /* background-color: #F6E1B4; */
   cursor: pointer;
 }
 
-button.btn_spcar2{
-  width: 40%;
-  height: 35px;
-  background-color: #D5D8B9;
+button{
+  background-color: transparent;
   border: none;
 }
+button.btn_spcar2 img{
+  width: 30%;
+  /* height: 35px; */
+  background-color: none;
+  
+}
 
-button.btn_spcar2:hover{
-  background-color: #F6E1B4;
+button.btn_spcar2 img:hover{
+  /* background-color: #F6E1B4; */
   cursor: pointer;
 }
 
 
 @media screen and (max-width: 575px){
-  div.car_group{
-    display: block;
-    margin-left: 25px;
-  }
+
   
-  button.btn_spcar{
-    width: 80%;
+  button.btn_spcar img{
+    width: 50%;
     /* margin-left: 20px ; */
   }
-  button.btn_spcar > p{
-    font-size: 12px;
+
+  button.btn_spcar2 img{
+    width: 50%;
   }
-  button.btn_spcar2{
-    width: 80%;
-  }
-  button.btn_spcar2 > p{
-    font-size: 12px;
-  }
+
 }
