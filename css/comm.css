@@ -141,6 +141,7 @@ div.comm_info{
   /* border: 1px solid red; */
   height: 600px;
   width: 60%;
+  max-width: 800px;
   margin: 0 auto;
   margin-bottom: 50px;
   position: relative;
