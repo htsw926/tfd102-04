@@ -138,6 +138,11 @@ div.kind_bg{
 }
 
 @media screen and (max-width: 575px){
+  div.kind_group{
+    /* border: 1px solid red; */
+    height: 250px;
+    width: 100%;
+  }
 	div.kind{
     position: static;
     margin: 0 auto;
@@ -145,11 +150,12 @@ div.kind_bg{
   }
   div.kind_bg{
     right: 0;
+    width: 100%;
   }
   h2.k_h2{
-    width: 50%;
+    width: 30%;
     position: absolute;
-    left: 70%;
+    left: 60%;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px){
@@ -217,7 +223,9 @@ div.knowledge_bg{
 
 @media screen and (max-width: 575px){
   div.know_group{
+    /* border: 1px solid red; */
     height: 250px;
+    width: 100%;
   }
 	div.knowledge{
     position: static;
@@ -226,12 +234,12 @@ div.knowledge_bg{
   }
   div.knowledge_bg{
     right: 0;
-    top: 50%;
+    width: 100%;
   }
   h2.n_h2{
-    width: 50%;
+    width: 30%;
     position: absolute;
-    left: 70%;
+    left: 60%;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px){
@@ -304,7 +312,9 @@ div.produce_bg{
 
 @media screen and (max-width: 575px){
   div.pd_group{
+    /* border: 1px solid red; */
     height: 250px;
+    width: 100%;
   }
 	div.produce{
     position: static;
@@ -313,12 +323,12 @@ div.produce_bg{
   }
   div.produce_bg{
     right: 0;
-    top: 50%;
+    width: 100%;
   }
   h2.p_h2{
-    width: 50%;
+    width: 30%;
     position: absolute;
-    left: 70%;
+    left: 60%;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px){
