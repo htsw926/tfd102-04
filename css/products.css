@@ -10,6 +10,11 @@ body{
   background-color: #2F2E29;
 }
 
+h3.pd_h3{
+  color: #E39D7B;
+}
+
+
 div.banner{
   /* border: 1px solid red; */
   width:100%;
